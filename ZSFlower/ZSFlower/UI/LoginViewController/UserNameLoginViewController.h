@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UserNameLoginViewController.h
 //  ZSFlower
 //
 //  Created by zuo xiaolin on 15/4/11.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "BaseViewController.h"
+@interface UserNameLoginViewController : BaseViewController
 
 @end
-

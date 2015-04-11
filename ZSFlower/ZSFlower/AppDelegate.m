@@ -7,16 +7,25 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LoginViewController.h"
+#import "CustomNavigationController.h"
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
++ (AppDelegate*)appDelegate {
+    return (AppDelegate*)[[UIApplication sharedApplication] delegate];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    LoginViewController * viewController = [[LoginViewController alloc] init];
+    CustomNavigationController *rootNaviController = [[CustomNavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = rootNaviController;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

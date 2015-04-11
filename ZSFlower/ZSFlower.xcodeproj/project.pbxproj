@@ -9,11 +9,19 @@
 /* Begin PBXBuildFile section */
 		DA66C6901AD8EBAD00FBC19C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C68F1AD8EBAD00FBC19C /* main.m */; };
 		DA66C6931AD8EBAD00FBC19C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6921AD8EBAD00FBC19C /* AppDelegate.m */; };
-		DA66C6961AD8EBAD00FBC19C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6951AD8EBAD00FBC19C /* ViewController.m */; };
 		DA66C6991AD8EBAD00FBC19C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA66C6971AD8EBAD00FBC19C /* Main.storyboard */; };
-		DA66C69B1AD8EBAD00FBC19C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA66C69A1AD8EBAD00FBC19C /* Images.xcassets */; };
 		DA66C69E1AD8EBAD00FBC19C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA66C69C1AD8EBAD00FBC19C /* LaunchScreen.xib */; };
 		DA66C6AA1AD8EBAE00FBC19C /* ZSFlowerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6A91AD8EBAE00FBC19C /* ZSFlowerTests.m */; };
+		DA66C6BC1AD8F13C00FBC19C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA66C6BB1AD8F13C00FBC19C /* Images.xcassets */; };
+		DA66C6BF1AD8F33500FBC19C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6BE1AD8F33500FBC19C /* LoginViewController.m */; };
+		DA66C6C61AD8F4A100FBC19C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6C11AD8F4A100FBC19C /* BaseViewController.m */; };
+		DA66C6C71AD8F4A100FBC19C /* CustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6C31AD8F4A100FBC19C /* CustomNavigationController.m */; };
+		DA66C6CC1AD8F6B900FBC19C /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C6CB1AD8F6B900FBC19C /* UIViewAdditions.m */; };
+		DA66C7081AD8FC7600FBC19C /* PUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C7071AD8FC7600FBC19C /* PUUtil.m */; };
+		DA66C70B1AD9005D00FBC19C /* Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C70A1AD9005D00FBC19C /* Addtions.m */; };
+		DA66C70E1AD9171A00FBC19C /* MobileLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C70D1AD9171A00FBC19C /* MobileLoginViewController.m */; };
+		DA66C7111AD9174200FBC19C /* EmailLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C7101AD9174200FBC19C /* EmailLoginViewController.m */; };
+		DA66C7141AD917FE00FBC19C /* UserNameLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C7131AD917FE00FBC19C /* UserNameLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +40,32 @@
 		DA66C68F1AD8EBAD00FBC19C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA66C6911AD8EBAD00FBC19C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA66C6921AD8EBAD00FBC19C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DA66C6941AD8EBAD00FBC19C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DA66C6951AD8EBAD00FBC19C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA66C6981AD8EBAD00FBC19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DA66C69A1AD8EBAD00FBC19C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA66C69D1AD8EBAD00FBC19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DA66C6A31AD8EBAE00FBC19C /* ZSFlowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZSFlowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA66C6A81AD8EBAE00FBC19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA66C6A91AD8EBAE00FBC19C /* ZSFlowerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZSFlowerTests.m; sourceTree = "<group>"; };
+		DA66C6BB1AD8F13C00FBC19C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DA66C6BD1AD8F33500FBC19C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DA66C6BE1AD8F33500FBC19C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DA66C6C01AD8F4A100FBC19C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DA66C6C11AD8F4A100FBC19C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DA66C6C21AD8F4A100FBC19C /* CustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationController.h; sourceTree = "<group>"; };
+		DA66C6C31AD8F4A100FBC19C /* CustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationController.m; sourceTree = "<group>"; };
+		DA66C6CA1AD8F6B900FBC19C /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		DA66C6CB1AD8F6B900FBC19C /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		DA66C7031AD8F8E300FBC19C /* ZS-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZS-PrefixHeader.pch"; sourceTree = "<group>"; };
+		DA66C7041AD8FA6F00FBC19C /* ZSConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSConfig.h; sourceTree = "<group>"; };
+		DA66C7061AD8FC7600FBC19C /* PUUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PUUtil.h; sourceTree = "<group>"; };
+		DA66C7071AD8FC7600FBC19C /* PUUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PUUtil.m; sourceTree = "<group>"; };
+		DA66C7091AD9005D00FBC19C /* Addtions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Addtions.h; sourceTree = "<group>"; };
+		DA66C70A1AD9005D00FBC19C /* Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Addtions.m; sourceTree = "<group>"; };
+		DA66C70C1AD9171900FBC19C /* MobileLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileLoginViewController.h; sourceTree = "<group>"; };
+		DA66C70D1AD9171A00FBC19C /* MobileLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobileLoginViewController.m; sourceTree = "<group>"; };
+		DA66C70F1AD9174200FBC19C /* EmailLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailLoginViewController.h; sourceTree = "<group>"; };
+		DA66C7101AD9174200FBC19C /* EmailLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailLoginViewController.m; sourceTree = "<group>"; };
+		DA66C7121AD917FE00FBC19C /* UserNameLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNameLoginViewController.h; sourceTree = "<group>"; };
+		DA66C7131AD917FE00FBC19C /* UserNameLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +107,17 @@
 		DA66C68C1AD8EBAD00FBC19C /* ZSFlower */ = {
 			isa = PBXGroup;
 			children = (
+				DA66C7051AD8FC5500FBC19C /* Puutil */,
+				DA66C6C91AD8F66B00FBC19C /* Addition+Category */,
+				DA66C6BB1AD8F13C00FBC19C /* Images.xcassets */,
+				DA66C6B31AD8F03600FBC19C /* CommHeader */,
+				DA66C6B41AD8F03600FBC19C /* CommUI */,
+				DA66C6B61AD8F03600FBC19C /* Model */,
+				DA66C6B71AD8F03600FBC19C /* thirdPartyLibrary */,
+				DA66C6B81AD8F03600FBC19C /* UI */,
 				DA66C6911AD8EBAD00FBC19C /* AppDelegate.h */,
 				DA66C6921AD8EBAD00FBC19C /* AppDelegate.m */,
-				DA66C6941AD8EBAD00FBC19C /* ViewController.h */,
-				DA66C6951AD8EBAD00FBC19C /* ViewController.m */,
 				DA66C6971AD8EBAD00FBC19C /* Main.storyboard */,
-				DA66C69A1AD8EBAD00FBC19C /* Images.xcassets */,
 				DA66C69C1AD8EBAD00FBC19C /* LaunchScreen.xib */,
 				DA66C68D1AD8EBAD00FBC19C /* Supporting Files */,
 			);
@@ -98,6 +129,7 @@
 			children = (
 				DA66C68E1AD8EBAD00FBC19C /* Info.plist */,
 				DA66C68F1AD8EBAD00FBC19C /* main.m */,
+				DA66C7031AD8F8E300FBC19C /* ZS-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +149,82 @@
 				DA66C6A81AD8EBAE00FBC19C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA66C6B31AD8F03600FBC19C /* CommHeader */ = {
+			isa = PBXGroup;
+			children = (
+				DA66C7041AD8FA6F00FBC19C /* ZSConfig.h */,
+			);
+			path = CommHeader;
+			sourceTree = "<group>";
+		};
+		DA66C6B41AD8F03600FBC19C /* CommUI */ = {
+			isa = PBXGroup;
+			children = (
+				DA66C6C01AD8F4A100FBC19C /* BaseViewController.h */,
+				DA66C6C11AD8F4A100FBC19C /* BaseViewController.m */,
+				DA66C6C21AD8F4A100FBC19C /* CustomNavigationController.h */,
+				DA66C6C31AD8F4A100FBC19C /* CustomNavigationController.m */,
+			);
+			path = CommUI;
+			sourceTree = "<group>";
+		};
+		DA66C6B61AD8F03600FBC19C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA66C6B71AD8F03600FBC19C /* thirdPartyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = thirdPartyLibrary;
+			sourceTree = "<group>";
+		};
+		DA66C6B81AD8F03600FBC19C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DA66C6BA1AD8F06A00FBC19C /* LoginViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DA66C6BA1AD8F06A00FBC19C /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA66C6BD1AD8F33500FBC19C /* LoginViewController.h */,
+				DA66C6BE1AD8F33500FBC19C /* LoginViewController.m */,
+				DA66C70C1AD9171900FBC19C /* MobileLoginViewController.h */,
+				DA66C70D1AD9171A00FBC19C /* MobileLoginViewController.m */,
+				DA66C70F1AD9174200FBC19C /* EmailLoginViewController.h */,
+				DA66C7101AD9174200FBC19C /* EmailLoginViewController.m */,
+				DA66C7121AD917FE00FBC19C /* UserNameLoginViewController.h */,
+				DA66C7131AD917FE00FBC19C /* UserNameLoginViewController.m */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		DA66C6C91AD8F66B00FBC19C /* Addition+Category */ = {
+			isa = PBXGroup;
+			children = (
+				DA66C7091AD9005D00FBC19C /* Addtions.h */,
+				DA66C70A1AD9005D00FBC19C /* Addtions.m */,
+				DA66C6CA1AD8F6B900FBC19C /* UIViewAdditions.h */,
+				DA66C6CB1AD8F6B900FBC19C /* UIViewAdditions.m */,
+			);
+			path = "Addition+Category";
+			sourceTree = "<group>";
+		};
+		DA66C7051AD8FC5500FBC19C /* Puutil */ = {
+			isa = PBXGroup;
+			children = (
+				DA66C7061AD8FC7600FBC19C /* PUUtil.h */,
+				DA66C7071AD8FC7600FBC19C /* PUUtil.m */,
+			);
+			path = Puutil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA66C6BC1AD8F13C00FBC19C /* Images.xcassets in Resources */,
 				DA66C6991AD8EBAD00FBC19C /* Main.storyboard in Resources */,
 				DA66C69E1AD8EBAD00FBC19C /* LaunchScreen.xib in Resources */,
-				DA66C69B1AD8EBAD00FBC19C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA66C6961AD8EBAD00FBC19C /* ViewController.m in Sources */,
 				DA66C6931AD8EBAD00FBC19C /* AppDelegate.m in Sources */,
+				DA66C6C71AD8F4A100FBC19C /* CustomNavigationController.m in Sources */,
+				DA66C6CC1AD8F6B900FBC19C /* UIViewAdditions.m in Sources */,
+				DA66C7111AD9174200FBC19C /* EmailLoginViewController.m in Sources */,
+				DA66C7141AD917FE00FBC19C /* UserNameLoginViewController.m in Sources */,
+				DA66C6C61AD8F4A100FBC19C /* BaseViewController.m in Sources */,
+				DA66C70E1AD9171A00FBC19C /* MobileLoginViewController.m in Sources */,
 				DA66C6901AD8EBAD00FBC19C /* main.m in Sources */,
+				DA66C70B1AD9005D00FBC19C /* Addtions.m in Sources */,
+				DA66C7081AD8FC7600FBC19C /* PUUtil.m in Sources */,
+				DA66C6BF1AD8F33500FBC19C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +461,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZSFlower/ZS-PrefixHeader.pch";
 				INFOPLIST_FILE = ZSFlower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +474,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZSFlower/ZS-PrefixHeader.pch";
 				INFOPLIST_FILE = ZSFlower/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
