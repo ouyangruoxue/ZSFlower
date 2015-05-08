@@ -23,6 +23,11 @@
 #define kVersion_4_9_0_OR_LATER  ( [[Utility version] compare:@"4.9.0"] != NSOrderedAscending )
 
 
+#define RGBCOLOR(r, g, b) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:1]
+#define RGBACOLOR(r, g, b, a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a)]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 #define iPhone5     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6     ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
@@ -42,6 +47,7 @@
 
 #define SCREEN_WIDTH          ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT         ([UIScreen mainScreen].bounds.size.height)
+#define KTABBARHEIGHT           49.0
 
 
 #define USER_DEFAULT          [NSUserDefaults standardUserDefaults]
@@ -64,9 +70,10 @@
 #endif
 
 #define FONT_TITLE(X)     [UIFont systemFontOfSize:X]
-
+#define BOLDFONT_TITLE(X)     [UIFont boldSystemFontOfSize:X]
 
 #define KEY_WINDOW  [[UIApplication sharedApplication]keyWindow]
+#define K_BACKGROUND_COLOR [PUUtil getColorByHexadecimalColor:@"fafafa"]
 
 //定义色色常量
 #define kApp_Corlor_1      [PUUtil getColorByHexadecimalColor:@"ffffff"]
@@ -90,7 +97,7 @@
 #define kFont_Size_6  11
 #define kFont_Size_7  10
 #define kFont_Size_14 14
-
+#define kFont_Size_21 21
 
 #define NOTIFICATION_DEFAULT     [NSNotificationCenter defaultCenter]
 

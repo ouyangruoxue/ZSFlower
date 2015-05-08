@@ -73,7 +73,7 @@
         }
         _topImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, height)];
         _topImageView.userInteractionEnabled = YES;
-        _topImageView.backgroundColor = [UIColor blueColor];
+        _topImageView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"51a264"];
         
         self.topContainerView.top = height - self.topContainerView.height;
         [_topImageView addSubview:self.topContainerView];

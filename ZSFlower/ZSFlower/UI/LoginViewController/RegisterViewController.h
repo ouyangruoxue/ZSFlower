@@ -1,13 +1,13 @@
 //
-//  UserNameLoginViewController.h
+//  RegisterViewController.h
 //  ZSFlower
 //
-//  Created by zuo xiaolin on 15/4/11.
+//  Created by zuo xiaolin on 15/4/28.
 //  Copyright (c) 2015年 zuo xiaolin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-@interface UserNameLoginViewController : BaseViewController
+@interface RegisterViewController : BaseViewController
 
 @end

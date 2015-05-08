@@ -84,7 +84,7 @@
                                                     NSFontAttributeName,nil]];
     }
     else{
-        
+    
         [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                     [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0],
                                                     UITextAttributeTextColor,
@@ -238,12 +238,10 @@
             [UIView animateWithDuration:0.3 animations:^{
                 [self moveViewWithX:SCREEN_WIDTH];
             } completion:^(BOOL finished) {
-                
                 [self popViewControllerAnimated:NO];
                 CGRect frame = self.view.frame;
                 frame.origin.x = 0;
                 self.view.frame = frame;
-                
                 _isMoving = NO;
             }];
         }else{
@@ -253,7 +251,6 @@
                 _isMoving = NO;
                 self.backgroundView.hidden = YES;
             }];
-            
         }
         return;
         
@@ -265,7 +262,6 @@
             _isMoving = NO;
             self.backgroundView.hidden = YES;
         }];
-        
         return;
     }
     

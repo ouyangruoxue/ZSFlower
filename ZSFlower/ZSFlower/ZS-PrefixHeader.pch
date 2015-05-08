@@ -10,10 +10,11 @@
 #define ZSFlower_ZS_PrefixHeader_pch
 
 #import "UIViewAdditions.h"
+#import "NSString+Utility.h"
 #import "ZSConfig.h"
 #import "PUUtil.h"
 #import "Addtions.h"
-
-
+#import "PopupNotify.h"
+#import "NSDictionary+Additions.h"
 
 #endif

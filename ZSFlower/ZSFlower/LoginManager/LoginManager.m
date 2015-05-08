@@ -8,13 +8,27 @@
 
 #import "LoginManager.h"
 #import "RegexKitLite.h"
+
+static LoginManager *_instance = nil;
 @interface LoginManager()
 
 @end
 @implementation LoginManager
 
++(id)shareInstance{
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [[LoginManager alloc] init];
+    });
+    
+    return _instance;
 
--(BOOL)isMoblieNum:(NSString *)mobileNum{
+}
+
+#pragma mark 账号判断
+
+-(BOOL)isMoblieNum:(NSString *)account{
     
     NSString * MOBILE = @"^[1][1-9][0-9]{9}$";
     
@@ -31,7 +45,7 @@
     //    NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CU];
     //    NSPredicate *regextestct = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CT];
     
-    if ([mobileNum isMatchedByRegex:MOBILE]&&mobileNum.length == 11){
+    if ([account isMatchedByRegex:MOBILE]&&account.length == 11){
         return YES;
     }else{
         return NO;
@@ -39,11 +53,22 @@
 }
 
 
--(BOOL)isEmailFormat:(NSString *)emailStr{
+-(BOOL)isEmailFormat:(NSString *)account{
     
     NSString *regex = @"^\\w+((\\-\\w+)|(\\.\\w+))*@[A-Za-z0-9]+((\\.|\\-)[A-Za-z0-9]+)*\\.[A-Za-z0-9]+$";
     
-    if ([emailStr isMatchedByRegex:regex]){
+    if ([account isMatchedByRegex:regex]){
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
+
+-(BOOL)hasCorrectAccountStr:(NSString *)account{
+    
+    NSString *regex = @"^\\w+[A-Za-z0-9]+$";
+    if ([account isMatchedByRegex:regex]){
         return YES;
     }else{
         return NO;

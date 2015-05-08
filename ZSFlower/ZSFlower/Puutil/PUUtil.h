@@ -1,9 +1,8 @@
 //
 //  PUUtil.h
-//  PUDemo
+//  ZSFlower
 //
-//  Created by JK.PENG on 13-11-1.
-//  Copyright (c) 2013年 njut. All rights reserved.
+//  Created by zuo xiaolin on 15/5/5.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,15 +15,10 @@ typedef enum {
 
 
 typedef enum {
-    Kappstore = 0,
-    Kweiphone,
-    Ktongbu,
-    Kppzhushou,
-    Kkuaiyong,
-    Kitools,
-    Kothers,
-    K91store
-}ChanelType;
+    Kmobile = 0,
+    Kemail,
+    KuserName
+}accountType;
 
 @interface PUUtil : NSObject
 
@@ -91,7 +85,6 @@ typedef enum {
                 capInsets:(UIEdgeInsets)capInsets
              resizingMode:(UIImageResizingMode)resizingMode;
 
-+(NSString *)getChanelWithChanelType:(ChanelType)type;
 
 /*** 适配API ***/
 + (CGFloat)adapterOriginX:(CGFloat)x withWidth:(CGFloat)width;//根据标准320，计算大屏(375,414)对应的比例
