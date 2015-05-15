@@ -54,6 +54,7 @@
     self.titleText = @"登录";
     self.containerView.backgroundColor = K_BACKGROUND_COLOR;
     [self.containerView addSubview:self.LoginSelectTable];
+    [self.topContainerView addSubview:self.backButton];
 }
 
 
@@ -167,6 +168,14 @@
 
 #pragma mark  button action
 
+-(void)back{
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+
 -(void)selectAccountAction{
      isSelected = !isSelected;
     _loginAccountSelectBtn.selected = isSelected;
@@ -267,7 +276,7 @@
         _loginAccountSelectBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.accountField.right, 0, 24, 40)];
         _loginAccountSelectBtn.selected = isSelected;
         [_loginAccountSelectBtn setImage:[UIImage imageNamed:@"loginAccountUnSelected"] forState:UIControlStateNormal];
-        [_loginAccountSelectBtn setBackgroundImage:[UIImage imageNamed:@"loginAccountSelected"] forState:UIControlStateSelected | UIControlStateHighlighted];
+        [_loginAccountSelectBtn setBackgroundImage:[UIImage imageNamed:@"loginAccountSelected"] forState:UIControlStateSelected|UIControlStateHighlighted];
         [_loginAccountSelectBtn addTarget:self action:@selector(selectAccountAction) forControlEvents:UIControlEventTouchUpInside];
         _loginAccountSelectBtn.right =  SCREEN_WIDTH - 15;
         

@@ -168,7 +168,7 @@
         _changeValidateImageBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.validateImageView.right, self.validateImageView.bottom-20, 100, 16)];
         _changeValidateImageBtn.backgroundColor = [UIColor clearColor];
         [_changeValidateImageBtn setTitle:@"换一张" forState:UIControlStateNormal];
-        [_changeValidateImageBtn setTitleColor:[PUUtil getColorByHexadecimalColor:@"51a264"] forState:UIControlStateNormal];
+        [_changeValidateImageBtn setTitleColor:[PUUtil getColorByHexadecimalColor:@"47c535"] forState:UIControlStateNormal];
         [_changeValidateImageBtn addTarget:self action:@selector(changeValidateImage) forControlEvents:UIControlEventTouchUpInside];
     }
     return _changeValidateImageBtn;

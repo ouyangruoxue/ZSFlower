@@ -11,6 +11,11 @@
 #import "CustomNavigationController.h"
 #import "CustomTabBarController.h"
 #import "PersonalViewController.h"
+#import "HomeViewController.h"
+#import "ClassifyViewController.h"
+#import "DiscoverViewController.h"
+#import "ShopCartViewController.h"
+#import "PersonalViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,20 +27,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIViewController * control  = [[UIViewController alloc] init];
+    HomeViewController * homeVc  = [[HomeViewController alloc] init];
     
-        UIViewController * control1  = [[UIViewController alloc] init];
+    ClassifyViewController * classifyVc  = [[ClassifyViewController alloc] init];
     
-        PersonalViewController * control2 = [[PersonalViewController alloc] init];
+    DiscoverViewController * discoerVc = [[DiscoverViewController alloc] init];
     
-    LoginViewController * viewController = [[LoginViewController alloc] init];
+    ShopCartViewController * shopCartVc = [[ShopCartViewController alloc] init];
+    
+    PersonalViewController *personalVc = [[PersonalViewController alloc] init];
     
     CustomTabBarController *tabBarController = [[CustomTabBarController alloc] init];
     
-    tabBarController.viewControllers = @[control,control1,control2,viewController];
+    tabBarController.viewControllers = @[homeVc,classifyVc,discoerVc,shopCartVc,personalVc];
+    [tabBarController layoutVisibleTabbar_containExtraController:NO];
+    tabBarController.selectedButtonIndex = 0;
+    [tabBarController setTab];
     
-    CustomNavigationController *rootNaviController = [[CustomNavigationController alloc] initWithRootViewController:tabBarController];
-    self.window.rootViewController = rootNaviController;
+    _rootNaviController = [[CustomNavigationController alloc] initWithRootViewController:tabBarController];
+    self.window.rootViewController = _rootNaviController;
     [self.window makeKeyAndVisible];
     
     
@@ -43,43 +53,15 @@
 }
 
 
--(void)tabBarInit{
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
     
-  /*
-    UITabBar *tabBar = tabBarViewController.tabBar;
-    UITabBarItem *tabBarItem1 = [tabBar.items objectAtIndex:0];
-    UITabBarItem *tabBarItem2 = [tabBar.items objectAtIndex:1];
-    UITabBarController提供一个tabBar属性，我们可以透过这个属性取得UITabBar
-    并在UITabBar的items属性取得所有的UITabBarItem
+    return YES;
+}// Will be deprecated at some point, please replace with application:openURL:sourceApplication:annotation:
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     
-
-    tabBarItem1.title = @"Home";
-    tabBarItem2.title = @"Maps";
-    透过UITabBarItem的title属性,可以设定tab bar item上显示的文字
-    
-
-    [tabBarItem1 setFinishedSelectedImage:[UIImage imageNamed:@"home_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"home.png"]];
-    [tabBarItem2 setFinishedSelectedImage:[UIImage imageNamed:@"maps_selected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"maps.png"]];
-    
-    - (void)setFinishedSelectedImage:(UIImage *)selectedImage withFinishedUnselectedImage:(UIImage *)unselectedImage
-    这是UITabBarItem提供的方法，可以设定上面所显示的图片,selectedImage是只目前选择并显示的TabBatItem显示的图片
-    unselectedImage则是平常未选中时显示的图片
-    
-
-    UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar.png"];
-    [[UITabBar appearance] setBackgroundImage:tabBarBackground];
-    这段代码可以修改UITabBar显示的背景图
-    
-
-    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar_selected.png"]];
-    这可以设定选中的UITabBarItem后面的图
-    
-
-    UIColor *titleHighlightedColor = [UIColor colorWithRed:153/255.0 green:192/255.0 blue:48/255.0 alpha:1.0];
-    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                       titleHighlightedColor, UITextAttributeTextColor,
-                                                       nil] forState:UIControlStateHighlighted];*/
+    return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

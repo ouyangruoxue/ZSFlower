@@ -73,7 +73,7 @@
         }
         _topImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, height)];
         _topImageView.userInteractionEnabled = YES;
-        _topImageView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"51a264"];
+        _topImageView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"47c535"];
         
         self.topContainerView.top = height - self.topContainerView.height;
         [_topImageView addSubview:self.topContainerView];
@@ -149,17 +149,13 @@
 
 - (UIButton *)rightButton {
     if (!_rightButton) {
-        UIImage  *btnImg = IMGNAMED(@"nav_btn");
-        UIImage  *img = [PUUtil stretchImage:btnImg capInsets:UIEdgeInsetsMake(btnImg.size.height/2, btnImg.size.width/2, btnImg.size.height/2, btnImg.size.width/2) resizingMode:UIImageResizingModeStretch];
-        UIImage  *img1 = [PUUtil stretchImage:[UIImage imageNamed:@"nav_btn_1"] capInsets:UIEdgeInsetsMake(btnImg.size.height/2, btnImg.size.width/2, btnImg.size.height/2, btnImg.size.width/2) resizingMode:UIImageResizingModeStretch];
         _rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_rightButton setBackgroundImage:img forState:UIControlStateNormal];
-        [_rightButton setBackgroundImage:img1 forState:UIControlStateSelected];
+
         [_rightButton setExclusiveTouch:YES];
-        [_rightButton.titleLabel setFont:FONT_TITLE(kFont_Size_4)];
+        [_rightButton.titleLabel setFont:FONT_TITLE(kFont_Size_1)];
         [_rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_rightButton setAutoresizingMask:(UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleTopMargin)];
-        _rightButton.frame = CGRectMake(0, 0, img.size.width, img.size.height);
+        _rightButton.frame = CGRectMake(0, 0, 60, 45);
         _rightButton.right = SCREEN_WIDTH-10;
         [_rightButton addTarget:self action:@selector(rightBarBtnClickAction) forControlEvents:UIControlEventTouchUpInside];
         [self.topContainerView addSubview:_rightButton];

@@ -116,8 +116,8 @@
         btn.titleLabel.font = [UIFont systemFontOfSize:14];
         btn.exclusiveTouch = YES;
         btn.tag = i+kTagOffsetTabBarItem;
-       // [btn setImage:[UIImage imageNamed:[Utility getTabbarIconNameWithCorrespondingViewController:viewController]] forState:UIControlStateNormal];
-        //[btn setImage:[UIImage imageNamed:[Utility getTabbarHiIconNameWithCorrespondingViewController:viewController]] forState:UIControlStateSelected];
+        [btn setImage:[UIImage imageNamed:[Utility getTabbarIconNameWithCorrespondingViewController:viewController]] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:[Utility getTabbarHiIconNameWithCorrespondingViewController:viewController]] forState:UIControlStateSelected];
         UIImage  *tab = [PUUtil stretchImage:[UIImage imageNamed:@"tabbar_btn"] capInsets:UIEdgeInsetsMake(24, 32, 24, 32) resizingMode:UIImageResizingModeStretch];
         UIImage  *tab1 = [PUUtil stretchImage:[UIImage imageNamed:@"tabbar_btn_1"] capInsets:UIEdgeInsetsMake(24, 32, 24, 32) resizingMode:UIImageResizingModeStretch];
         [btn setBackgroundImage:tab forState:UIControlStateNormal];
@@ -176,8 +176,9 @@
     
 }
 
-
+// 预留为了选中
 - (void)setTab {
+    
 }
 
 

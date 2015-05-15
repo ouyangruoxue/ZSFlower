@@ -8,6 +8,13 @@
 
 #import "PersonalViewController.h"
 #import "PersonalTableViewCell.h"
+#import "LoginViewController.h"
+#import "CustomNavigationController.h"
+#import "MyOrderViewController.h"
+#import "AppDelegate.h"
+#import "BrowseHistoryViewController.h"
+#import "SettingViewController.h"
+#import "FeedbackViewController.h"
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *personalTable;
 @property (nonatomic,strong)UIButton *messageBtn;
@@ -170,6 +177,9 @@
 
 -(void)projectSet{
     
+    SettingViewController *setVc = [[SettingViewController alloc] init];
+    [self.navigationController pushViewController:setVc animated:YES];
+    
 }
 
 -(void)messageAction{
@@ -177,7 +187,13 @@
 }
 
 -(void)longinAction{
+    LoginViewController *login = [[LoginViewController alloc] init];
     
+    CustomNavigationController *nav = [[CustomNavigationController alloc] initWithRootViewController:login];
+    
+    [self.navigationController presentViewController:nav animated:YES completion:^{
+        
+    }];
 }
 
 -(void)myAttention{
@@ -186,7 +202,41 @@
 
 -(void)myBrowseRecorders{
     DLog(@"进入浏览记录");
+    BrowseHistoryViewController *browse = [[BrowseHistoryViewController alloc] init];
+    [self.navigationController pushViewController:browse animated:YES];
 }
+
+-(void)waitingForPay{
+    DLog(@"待付款");
+    MyOrderViewController *order = [[MyOrderViewController alloc] initWithOrderIndex:1];
+    [[AppDelegate appDelegate].rootNaviController pushViewController:order animated:YES];
+}
+
+-(void)waitingForSendArticle{
+    DLog(@"待发货");
+    MyOrderViewController *order = [[MyOrderViewController alloc] initWithOrderIndex:2];
+    [[AppDelegate appDelegate].rootNaviController pushViewController:order animated:YES];
+}
+
+-(void)waitingForTakeArticle{
+    DLog(@"待收货");
+    MyOrderViewController *order = [[MyOrderViewController alloc] initWithOrderIndex:3];
+    [[AppDelegate appDelegate].rootNaviController pushViewController:order animated:YES];
+}
+
+
+-(void)waitingForApparise{
+    DLog(@"待评价");
+    MyOrderViewController *order = [[MyOrderViewController alloc] initWithOrderIndex:4];
+    [[AppDelegate appDelegate].rootNaviController pushViewController:order animated:YES];
+}
+
+
+-(void)waitingForAftersale{
+    DLog(@"售后");
+}
+
+
 
 #pragma mark TableViewDelegate
 
@@ -240,6 +290,18 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 0) {
+        if (indexPath.row == 1) {
+            MyOrderViewController *order = [[MyOrderViewController alloc] initWithOrderIndex:0];
+            [[AppDelegate appDelegate].rootNaviController pushViewController:order animated:YES];
+        }
+    }
+    else{
+        if (indexPath.row == 3) {
+            FeedbackViewController *feedback = [[FeedbackViewController alloc] init];
+            [self.navigationController pushViewController:feedback animated:YES];
+        }
+    }
 }
 
 
@@ -257,8 +319,31 @@
         
         if (indexPath.row == 0) {
             
+            
+            UIView *payBtn = [Utility personalButtonImage:@"center_pay" buttonName:@"待付款" target:self action:@selector(waitingForPay) forControlEvents:UIControlEventTouchUpInside];
+            
+            UIView *sendBtn = [Utility personalButtonImage:@"center_send" buttonName:@"待发货" target:self action:@selector(waitingForSendArticle) forControlEvents:UIControlEventTouchUpInside];
+            
+            sendBtn.left = payBtn.right;
+            
+            UIView *takeBtn = [Utility personalButtonImage:@"center_take" buttonName:@"待收货" target:self action:@selector(waitingForTakeArticle) forControlEvents:UIControlEventTouchUpInside];
+            takeBtn.left = sendBtn.right;
+            
+            UIView *appraiseBtn = [Utility personalButtonImage:@"center_appraise" buttonName:@"待评价" target:self action:@selector(waitingForApparise) forControlEvents:UIControlEventTouchUpInside];
+            appraiseBtn.left = takeBtn.right;
+            
+            UIView *drawbackBtn = [Utility personalButtonImage:@"center_drawback" buttonName:@"退款/售后" target:self action:@selector(waitingForAftersale) forControlEvents:UIControlEventTouchUpInside];
+            drawbackBtn.left = appraiseBtn.right;
+            
             cell.lineView.bottom = 64;
+            
+            [cell.contentView addSubview:payBtn];
+            [cell.contentView addSubview:sendBtn];
+            [cell.contentView addSubview:takeBtn];
+            [cell.contentView addSubview:appraiseBtn];
+            [cell.contentView addSubview:drawbackBtn];
             cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
         }
         else{
             cell.iconImage.image = [UIImage imageNamed:@"personal_center_order"];

@@ -20,6 +20,17 @@ typedef enum {
     KuserName
 }accountType;
 
+
+typedef enum {
+    KwaitingForPay = 0,//待付款
+    KwaitingForSend,//待发货
+    KwaitingForTake,//待收货
+    KwaitingForAppraise,//待评价
+    korderCacel,//取消订单
+    kordercompleteAppraise//订单完成
+}orderType;
+
+
 @interface PUUtil : NSObject
 
 #pragma mark - 文本对齐方式

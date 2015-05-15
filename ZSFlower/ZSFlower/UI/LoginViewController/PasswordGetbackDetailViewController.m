@@ -28,6 +28,7 @@
 }
 
 -(void)initUI{
+    self.titleText = @"密码找回";
     [self.containerView addSubview:self.nickNameLabel];
     [self.containerView addSubview:self.accountLabel];
     [self.topContainerView addSubview:self.backButton];
@@ -210,7 +211,7 @@
     
     if (!_getValidateBtn) {
         _getValidateBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.validateBackground.right, self.validateBackground.top, 101, 43)];
-        _getValidateBtn.backgroundColor = [PUUtil getColorByHexadecimalColor:@"51a264"];
+        _getValidateBtn.backgroundColor = [PUUtil getColorByHexadecimalColor:@"47c535"];
         [_getValidateBtn setTitle:@"获取验证码" forState:UIControlStateNormal];
         _getValidateBtn.titleLabel.font = FONT_TITLE(kFont_Size_4);
         [_getValidateBtn addTarget:self action:@selector(getMobileValidate) forControlEvents:UIControlEventTouchUpInside];
