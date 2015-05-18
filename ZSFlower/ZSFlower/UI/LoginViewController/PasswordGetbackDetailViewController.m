@@ -249,7 +249,7 @@
     
     if (!_pickHeaderView) {
         
-         _pickHeaderView  = [[UIView alloc] initWithFrame:CGRectMake(0, self.typePickView.top-40, SCREEN_WIDTH, 40)];
+         _pickHeaderView  = [[UIView alloc] initWithFrame:CGRectMake(0, self.typePickView.top, SCREEN_WIDTH, 40)];
         
         _pickHeaderView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"f0f1f2"];
         UIButton *completeBtn = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH-60, 0, 60, 40)];

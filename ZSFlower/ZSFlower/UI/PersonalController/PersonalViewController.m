@@ -15,6 +15,8 @@
 #import "BrowseHistoryViewController.h"
 #import "SettingViewController.h"
 #import "FeedbackViewController.h"
+#import "BankCardViewController.h"
+#import "personalInfoViewController.h"
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *personalTable;
 @property (nonatomic,strong)UIButton *messageBtn;
@@ -187,13 +189,22 @@
 }
 
 -(void)longinAction{
+    personalInfoViewController *personalinfo = [[personalInfoViewController alloc] init];
+    
+    CustomNavigationController *nav = [[CustomNavigationController alloc] initWithRootViewController:personalinfo];
+    
+    [self.navigationController presentViewController:nav animated:YES completion:^{
+        
+    }];
+
+    /*
     LoginViewController *login = [[LoginViewController alloc] init];
     
     CustomNavigationController *nav = [[CustomNavigationController alloc] initWithRootViewController:login];
     
     [self.navigationController presentViewController:nav animated:YES completion:^{
         
-    }];
+    }];*/
 }
 
 -(void)myAttention{
@@ -297,7 +308,12 @@
         }
     }
     else{
-        if (indexPath.row == 3) {
+        if (indexPath.row == 1) {
+            
+            BankCardViewController *bankcardvc = [[BankCardViewController alloc] init];
+            [self.navigationController pushViewController:bankcardvc animated:YES];
+        }
+       else if (indexPath.row == 3) {
             FeedbackViewController *feedback = [[FeedbackViewController alloc] init];
             [self.navigationController pushViewController:feedback animated:YES];
         }
@@ -310,7 +326,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *personalCell = @"PersonalTableViewCell";
-    PersonalTableViewCell *cell = nil;
+    PersonalTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:personalCell];
     if (cell == nil) {
         cell = [[PersonalTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:personalCell];
         cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA07C98D1B0728BE00DDF656 /* BankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07C98C1B0728BE00DDF656 /* BankCardViewController.m */; };
+		DA07C9901B072BCC00DDF656 /* BankCardManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07C98F1B072BCC00DDF656 /* BankCardManagerTableViewCell.m */; };
+		DA07C9931B0738F600DDF656 /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07C9921B0738F600DDF656 /* AddressViewController.m */; };
+		DA07C9961B073BDD00DDF656 /* personalInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA07C9951B073BDD00DDF656 /* personalInfoViewController.m */; };
 		DA0DB0211AF7264000806854 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0DB0171AF7264000806854 /* LoginViewController.m */; };
 		DA0DB0231AF7264000806854 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0DB01B1AF7264000806854 /* RegisterViewController.m */; };
 		DA0DB0271AF777D000806854 /* PassWordGetBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0DB0261AF777D000806854 /* PassWordGetBackViewController.m */; };
@@ -49,6 +53,7 @@
 		DA8A65F61AEDE249002F70CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A65F01AEDE249002F70CB /* UIKit.framework */; };
 		DA8A65F81AEDE291002F70CB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A65F71AEDE291002F70CB /* AdSupport.framework */; };
 		DA8A65FA1AEDE39A002F70CB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A65F91AEDE39A002F70CB /* libicucore.dylib */; };
+		DA8C9EA21B09899D002BE5F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C9EA11B09899D002BE5F4 /* MobileCoreServices.framework */; };
 		DA8E59D21AF9F14200852CAE /* PasswordGetbackDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E59D11AF9F14200852CAE /* PasswordGetbackDetailViewController.m */; };
 		DA8E59D51AFB00FC00852CAE /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E59D41AFB00FC00852CAE /* CustomTabBarController.m */; };
 		DA8E59D81AFB035100852CAE /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E59D71AFB035100852CAE /* NSDictionary+Additions.m */; };
@@ -90,6 +95,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA07C98B1B0728BE00DDF656 /* BankCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardViewController.h; sourceTree = "<group>"; };
+		DA07C98C1B0728BE00DDF656 /* BankCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardViewController.m; sourceTree = "<group>"; };
+		DA07C98E1B072BCC00DDF656 /* BankCardManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankCardManagerTableViewCell.h; sourceTree = "<group>"; };
+		DA07C98F1B072BCC00DDF656 /* BankCardManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankCardManagerTableViewCell.m; sourceTree = "<group>"; };
+		DA07C9911B0738F600DDF656 /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		DA07C9921B0738F600DDF656 /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		DA07C9941B073BDD00DDF656 /* personalInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personalInfoViewController.h; sourceTree = "<group>"; };
+		DA07C9951B073BDD00DDF656 /* personalInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personalInfoViewController.m; sourceTree = "<group>"; };
 		DA0DB0161AF7264000806854 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DA0DB0171AF7264000806854 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		DA0DB01A1AF7264000806854 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
@@ -167,6 +180,7 @@
 		DA8A65F01AEDE249002F70CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA8A65F71AEDE291002F70CB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DA8A65F91AEDE39A002F70CB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		DA8C9EA11B09899D002BE5F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DA8E59D01AF9F14200852CAE /* PasswordGetbackDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordGetbackDetailViewController.h; sourceTree = "<group>"; };
 		DA8E59D11AF9F14200852CAE /* PasswordGetbackDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordGetbackDetailViewController.m; sourceTree = "<group>"; };
 		DA8E59D31AFB00FC00852CAE /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
@@ -231,6 +245,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8C9EA21B09899D002BE5F4 /* MobileCoreServices.framework in Frameworks */,
 				DA8A65FA1AEDE39A002F70CB /* libicucore.dylib in Frameworks */,
 				DA8A65F81AEDE291002F70CB /* AdSupport.framework in Frameworks */,
 				DA8A65F11AEDE249002F70CB /* CFNetwork.framework in Frameworks */,
@@ -492,6 +507,7 @@
 		DA8A65EA1AEDE1EF002F70CB /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				DA8C9EA11B09899D002BE5F4 /* MobileCoreServices.framework */,
 				DA8A65F91AEDE39A002F70CB /* libicucore.dylib */,
 				DA8A65F71AEDE291002F70CB /* AdSupport.framework */,
 				DA8A65EB1AEDE249002F70CB /* CFNetwork.framework */,
@@ -517,6 +533,12 @@
 				DA8F89881B04AD3E00BC1AD6 /* SettingViewController.m */,
 				DA72E70C1B05D1DF000BF140 /* FeedbackViewController.h */,
 				DA72E70D1B05D1DF000BF140 /* FeedbackViewController.m */,
+				DA07C98B1B0728BE00DDF656 /* BankCardViewController.h */,
+				DA07C98C1B0728BE00DDF656 /* BankCardViewController.m */,
+				DA07C9911B0738F600DDF656 /* AddressViewController.h */,
+				DA07C9921B0738F600DDF656 /* AddressViewController.m */,
+				DA07C9941B073BDD00DDF656 /* personalInfoViewController.h */,
+				DA07C9951B073BDD00DDF656 /* personalInfoViewController.m */,
 			);
 			path = PersonalController;
 			sourceTree = "<group>";
@@ -568,6 +590,8 @@
 				DA8691E71B034A34005DB8F7 /* personalOrderTableViewCell.m */,
 				DA8F89841B049A9800BC1AD6 /* BrowseHistoryTableViewCell.h */,
 				DA8F89851B049A9800BC1AD6 /* BrowseHistoryTableViewCell.m */,
+				DA07C98E1B072BCC00DDF656 /* BankCardManagerTableViewCell.h */,
+				DA07C98F1B072BCC00DDF656 /* BankCardManagerTableViewCell.m */,
 			);
 			path = personalTableCell;
 			sourceTree = "<group>";
@@ -713,6 +737,7 @@
 				DA5E70031AF8990E0060040C /* NSString+Utility.m in Sources */,
 				DA8F89811B04904E00BC1AD6 /* BrowseHistoryViewController.m in Sources */,
 				DA5E70121AF899CA0060040C /* NSData+Encryption.m in Sources */,
+				DA07C9931B0738F600DDF656 /* AddressViewController.m in Sources */,
 				DA72E7121B05EC43000BF140 /* FeedBackSelectTypeView.m in Sources */,
 				DA8F89891B04AD3E00BC1AD6 /* SettingViewController.m in Sources */,
 				DA66C6931AD8EBAD00FBC19C /* AppDelegate.m in Sources */,
@@ -721,9 +746,11 @@
 				DA5E701E1AF89A6E0060040C /* NSArray+Comparisons.m in Sources */,
 				DA66C6CC1AD8F6B900FBC19C /* UIViewAdditions.m in Sources */,
 				DA8A65E91AEDE0A9002F70CB /* RegexKitLite.m in Sources */,
+				DA07C9901B072BCC00DDF656 /* BankCardManagerTableViewCell.m in Sources */,
 				DA5E70201AF89A6E0060040C /* NSDictionary+Extensions.m in Sources */,
 				DA8E59D21AF9F14200852CAE /* PasswordGetbackDetailViewController.m in Sources */,
 				DA8F89721B04338D00BC1AD6 /* SDImageCache.m in Sources */,
+				DA07C9961B073BDD00DDF656 /* personalInfoViewController.m in Sources */,
 				DA8F89861B049A9800BC1AD6 /* BrowseHistoryTableViewCell.m in Sources */,
 				DA8E59DC1AFC8CD400852CAE /* PersonalViewController.m in Sources */,
 				DA98BA751AFF060E009FDECA /* ClassifyViewController.m in Sources */,
@@ -754,6 +781,7 @@
 				DA66C70B1AD9005D00FBC19C /* Addtions.m in Sources */,
 				DA0DB0231AF7264000806854 /* RegisterViewController.m in Sources */,
 				DA5E701F1AF89A6E0060040C /* NSData+Base64.m in Sources */,
+				DA07C98D1B0728BE00DDF656 /* BankCardViewController.m in Sources */,
 				DA8E59DF1AFCA17900852CAE /* PersonalTableViewCell.m in Sources */,
 				DA8F89781B04338D00BC1AD6 /* SDWebImagePrefetcher.m in Sources */,
 				DA0DB0271AF777D000806854 /* PassWordGetBackViewController.m in Sources */,

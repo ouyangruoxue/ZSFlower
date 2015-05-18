@@ -88,7 +88,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *loginCell = @"LoginCell";
-    UITableViewCell *cell = nil;
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:loginCell];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:loginCell];
     }

@@ -79,7 +79,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *BrowseHistory = @"BrowseHistoryTableViewCell";
-    BrowseHistoryTableViewCell *cell = nil;
+    BrowseHistoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BrowseHistory];
     if (cell == nil) {
         cell = [[BrowseHistoryTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:BrowseHistory];
         cell.accessoryType =  UITableViewCellAccessoryNone;

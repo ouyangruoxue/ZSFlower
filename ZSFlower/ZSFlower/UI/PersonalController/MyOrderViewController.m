@@ -162,7 +162,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     static NSString *personalCell = @"PersonalTableViewCell";
-    personalOrderTableViewCell *cell = nil;
+    personalOrderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:personalCell];
     if (cell == nil) {
         cell = [[personalOrderTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:personalCell];
         cell.accessoryType =  UITableViewCellAccessoryNone;
