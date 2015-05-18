@@ -96,7 +96,7 @@
     
     UIButton * AddBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 20, SCREEN_WIDTH-30, 45)];
     [AddBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
-    [AddBtn setTitle:@" ╋ 添加银行卡" forState:UIControlStateNormal];
+    [AddBtn setTitle:@" ╋ 新增地址" forState:UIControlStateNormal];
     AddBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
     [AddBtn addTarget:self action:@selector(addBankCard) forControlEvents:UIControlEventTouchUpInside];
     [footView addSubview:AddBtn];

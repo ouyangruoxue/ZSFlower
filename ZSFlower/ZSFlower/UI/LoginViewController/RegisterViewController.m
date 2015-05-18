@@ -135,7 +135,7 @@
     UILabel * protocolLabel = [[UILabel alloc] init];
     protocolLabel.text = @"同意爱森林注册协议";
     protocolLabel.backgroundColor = [UIColor clearColor];
-    protocolLabel.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+    protocolLabel.textColor = kApp_Corlor_8;
     protocolLabel.font = FONT_TITLE(kFont_Size_4);
     protocolLabel.left = _selectBtn.right+2;
     [protocolLabel sizeToFit];

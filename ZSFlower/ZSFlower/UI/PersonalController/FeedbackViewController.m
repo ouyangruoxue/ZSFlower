@@ -51,7 +51,7 @@
     topTitle.numberOfLines = 1;
     topTitle.lineBreakMode = NSLineBreakByTruncatingTail;
     topTitle.textAlignment = NSTextAlignmentLeft;
-    topTitle.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+    topTitle.textColor = kApp_Corlor_8;
     topTitle.font = FONT_TITLE(kFont_Size_2);
     topTitle.width = 80;
     topTitle.left = 15;
@@ -85,7 +85,7 @@
     centerTitle.numberOfLines = 1;
     centerTitle.lineBreakMode = NSLineBreakByTruncatingTail;
     centerTitle.textAlignment = NSTextAlignmentLeft;
-    centerTitle.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+    centerTitle.textColor = kApp_Corlor_8;
     centerTitle.font = FONT_TITLE(kFont_Size_2);
     centerTitle.width = 80;
     centerTitle.left = 15;
@@ -121,7 +121,7 @@
     bottomTitle.numberOfLines = 1;
     bottomTitle.lineBreakMode = NSLineBreakByTruncatingTail;
     bottomTitle.textAlignment = NSTextAlignmentLeft;
-    bottomTitle.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+    bottomTitle.textColor = kApp_Corlor_8;
     bottomTitle.font = FONT_TITLE(kFont_Size_2);
     bottomTitle.width = 80;
     bottomTitle.left = 15;
@@ -173,7 +173,7 @@
         _feedBackTypeBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 0, 91, 30)];
         [_feedBackTypeBtn setTitle:@"功能意见" forState:UIControlStateNormal];
         _feedBackTypeBtn.titleLabel.font = FONT_TITLE(kFont_Size_2);
-        [_feedBackTypeBtn setTitleColor:[PUUtil getColorByHexadecimalColor:@"808080"] forState:UIControlStateNormal];
+        [_feedBackTypeBtn setTitleColor:kApp_Corlor_8 forState:UIControlStateNormal];
         [_feedBackTypeBtn setBackgroundImage:[UIImage imageNamed:@"personal__Opinion_icon01"] forState:UIControlStateNormal];
         [_feedBackTypeBtn addTarget:self action:@selector(selectTypeAction) forControlEvents:UIControlEventTouchUpInside];
         

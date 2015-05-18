@@ -99,7 +99,7 @@
     headView.backgroundColor = [UIColor whiteColor];
     
     UILabel *styleLabel = [[UILabel alloc] init];
-    styleLabel.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+    styleLabel.textColor = kApp_Corlor_8;
     styleLabel.backgroundColor = [UIColor clearColor];
     styleLabel.font = FONT_TITLE(kFont_Size_1);
     styleLabel.numberOfLines = 1;
@@ -113,7 +113,7 @@
         [headView addSubview:self.accountField];
         [headView addSubview:self.loginAccountSelectBtn];
             _loginAccountSelectBtn.selected = isSelected;
-            _accountField.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+            _accountField.textColor = kApp_Corlor_8;
             if (_loginAccountSelectBtn.selected) {
                 [_loginAccountSelectBtn setImage:[UIImage imageNamed:@"loginAccountSelected"] forState:UIControlStateNormal];
             }
@@ -227,14 +227,14 @@
     [registBtn setTitle:@"快速注册" forState:UIControlStateNormal];
     registBtn.titleLabel.font = FONT_TITLE(kFont_Size_14);
     registBtn.titleLabel.textAlignment = [PUUtil getTextAlign:TextAlignTypeLeft];
-    [registBtn setTitleColor:[PUUtil getColorByHexadecimalColor:@"808080"] forState:UIControlStateNormal];
+    [registBtn setTitleColor:kApp_Corlor_8 forState:UIControlStateNormal];
     [registBtn addTarget:self action:@selector(registerAccount) forControlEvents:UIControlEventTouchUpInside];
     [footerView addSubview:registBtn];
     
     UIButton * forgetBtn = [[UIButton alloc] initWithFrame:CGRectMake(loginBtn.right-60, loginBtn.bottom+10, 60, 20)];
     [forgetBtn setTitle:@"忘记密码" forState:UIControlStateNormal];
     forgetBtn.titleLabel.textAlignment = [PUUtil getTextAlign:TextAlignTypeLeft];
-    [forgetBtn setTitleColor:[PUUtil getColorByHexadecimalColor:@"808080"] forState:UIControlStateNormal];
+    [forgetBtn setTitleColor:kApp_Corlor_8 forState:UIControlStateNormal];
     forgetBtn.titleLabel.font = FONT_TITLE(kFont_Size_14);
     [forgetBtn addTarget:self action:@selector(forgetPassword) forControlEvents:UIControlEventTouchUpInside];
     [footerView addSubview:forgetBtn];

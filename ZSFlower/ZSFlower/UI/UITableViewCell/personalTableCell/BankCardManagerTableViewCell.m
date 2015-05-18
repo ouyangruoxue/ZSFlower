@@ -51,7 +51,7 @@
         _bankCardNumber.numberOfLines = 1;
         _bankCardNumber.lineBreakMode = NSLineBreakByTruncatingTail;
         _bankCardNumber.textAlignment = NSTextAlignmentLeft;
-        _bankCardNumber.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+        _bankCardNumber.textColor = kApp_Corlor_8;
         _bankCardNumber.font = FONT_TITLE(kFont_Size_5);
         _bankCardNumber.width = 150;
         _bankCardNumber.left = _bankIcon.right+15;
@@ -67,7 +67,7 @@
         _bankCardType.numberOfLines = 1;
         _bankCardType.lineBreakMode = NSLineBreakByTruncatingTail;
         _bankCardType.textAlignment = NSTextAlignmentLeft;
-        _bankCardType.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+        _bankCardType.textColor = kApp_Corlor_8;
         _bankCardType.font = FONT_TITLE(kFont_Size_5);
         _bankCardType.width = 100;
         _bankCardType.left = _bankCardNumber.right+15;

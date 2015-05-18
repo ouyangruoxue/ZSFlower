@@ -137,7 +137,7 @@
             cell.toplineView.hidden = YES;
             cell.textLabel.text = @"清除缓存";
             UILabel * label = [[UILabel alloc] init];
-            label.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+            label.textColor = kApp_Corlor_8;
             label.font = FONT_TITLE(kFont_Size_6);
             label.backgroundColor = [UIColor clearColor];
             
@@ -158,7 +158,7 @@
             cell.textLabel.text = @"关于我们";
             UILabel * label = [[UILabel alloc] init];
             label.backgroundColor = [UIColor clearColor];
-            label.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+            label.textColor = kApp_Corlor_8;
             label.font = FONT_TITLE(kFont_Size_6);
 #if DEBUG
             label.text = [NSString stringWithFormat:@"%@", APP_SUB_VERSION];

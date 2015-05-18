@@ -35,6 +35,7 @@
     _sex =nil;
     _typePickView = nil;
     _pickHeaderView = nil;
+    _datePick = nil;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -54,6 +54,7 @@
 		DA8A65F81AEDE291002F70CB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A65F71AEDE291002F70CB /* AdSupport.framework */; };
 		DA8A65FA1AEDE39A002F70CB /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8A65F91AEDE39A002F70CB /* libicucore.dylib */; };
 		DA8C9EA21B09899D002BE5F4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C9EA11B09899D002BE5F4 /* MobileCoreServices.framework */; };
+		DA8C9EA51B09D03F002BE5F4 /* AddressManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8C9EA41B09D03F002BE5F4 /* AddressManagerTableViewCell.m */; };
 		DA8E59D21AF9F14200852CAE /* PasswordGetbackDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E59D11AF9F14200852CAE /* PasswordGetbackDetailViewController.m */; };
 		DA8E59D51AFB00FC00852CAE /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E59D41AFB00FC00852CAE /* CustomTabBarController.m */; };
 		DA8E59D81AFB035100852CAE /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8E59D71AFB035100852CAE /* NSDictionary+Additions.m */; };
@@ -181,6 +182,8 @@
 		DA8A65F71AEDE291002F70CB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		DA8A65F91AEDE39A002F70CB /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		DA8C9EA11B09899D002BE5F4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DA8C9EA31B09D03F002BE5F4 /* AddressManagerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressManagerTableViewCell.h; sourceTree = "<group>"; };
+		DA8C9EA41B09D03F002BE5F4 /* AddressManagerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressManagerTableViewCell.m; sourceTree = "<group>"; };
 		DA8E59D01AF9F14200852CAE /* PasswordGetbackDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordGetbackDetailViewController.h; sourceTree = "<group>"; };
 		DA8E59D11AF9F14200852CAE /* PasswordGetbackDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordGetbackDetailViewController.m; sourceTree = "<group>"; };
 		DA8E59D31AFB00FC00852CAE /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
@@ -592,6 +595,8 @@
 				DA8F89851B049A9800BC1AD6 /* BrowseHistoryTableViewCell.m */,
 				DA07C98E1B072BCC00DDF656 /* BankCardManagerTableViewCell.h */,
 				DA07C98F1B072BCC00DDF656 /* BankCardManagerTableViewCell.m */,
+				DA8C9EA31B09D03F002BE5F4 /* AddressManagerTableViewCell.h */,
+				DA8C9EA41B09D03F002BE5F4 /* AddressManagerTableViewCell.m */,
 			);
 			path = personalTableCell;
 			sourceTree = "<group>";
@@ -773,6 +778,7 @@
 				DA5E70131AF899CA0060040C /* NSString+Base64.m in Sources */,
 				DA5E700F1AF899CA0060040C /* AESCrypt.m in Sources */,
 				DA8E59D51AFB00FC00852CAE /* CustomTabBarController.m in Sources */,
+				DA8C9EA51B09D03F002BE5F4 /* AddressManagerTableViewCell.m in Sources */,
 				DA8F897D1B04338D00BC1AD6 /* UIImageView+WebCache.m in Sources */,
 				DA98BA711AFF04F0009FDECA /* ShopCartViewController.m in Sources */,
 				DA8F897E1B04338D00BC1AD6 /* UIView+WebCacheOperation.m in Sources */,

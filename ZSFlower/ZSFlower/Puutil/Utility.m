@@ -69,4 +69,43 @@
     return theView;
 }
 
++ (UIButton *)rightViewWithimage:(NSString *)imageName andTitle:(NSString *)title target:(id)target action:(SEL)aSelector forControlEvents:(UIControlEvents)aControlEvents {
+    UIImage  *img = IMGNAMED(imageName);
+    UIView * theView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, img.size.height)];
+    theView.backgroundColor = [UIColor clearColor];
+    theView.userInteractionEnabled = NO;
+    int xOffset = 0;
+    int centerY = theView.height/2;
+    
+    
+    UIImageView *img1 = [[UIImageView alloc]initWithImage:IMGNAMED(imageName)];
+    [theView addSubview:img1];
+    img1.left = xOffset ;
+    img1.centerY = centerY;
+    
+    
+    UILabel *lightLbl = [[UILabel alloc]init];
+    lightLbl.textColor = kApp_Corlor_8;
+    lightLbl.font = [UIFont boldSystemFontOfSize:kFont_Size_5];
+    lightLbl.backgroundColor = [UIColor clearColor];
+    lightLbl.text = title;
+    [lightLbl sizeToFit];
+    
+    lightLbl.left = img1.right+5;
+    lightLbl.centerY = centerY;
+    
+    [theView addSubview:lightLbl];
+    theView.width = lightLbl.right;
+    
+    
+    NSUInteger btnWidth = theView.width >= 60 ? 60 : theView.width;
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, btnWidth, theView.height);
+    [btn addSubview:theView];
+    theView.center = btn.center;
+    [btn addTarget:target action:aSelector forControlEvents:aControlEvents];
+    return btn;
+}
+
+
 @end

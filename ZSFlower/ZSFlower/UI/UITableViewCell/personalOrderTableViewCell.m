@@ -147,7 +147,7 @@
         _numberLabel.numberOfLines = 1;
         _numberLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         _numberLabel.textAlignment = NSTextAlignmentRight;
-        _numberLabel.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+        _numberLabel.textColor = kApp_Corlor_8;
         _numberLabel.font = FONT_TITLE(kFont_Size_5);
         _numberLabel.width = 60;
         _numberLabel.right = SCREEN_WIDTH-15;
@@ -161,7 +161,7 @@
         _classifyLabel.numberOfLines = 1;
         _classifyLabel.lineBreakMode = NSLineBreakByTruncatingTail;
         _classifyLabel.textAlignment = NSTextAlignmentLeft;
-        _classifyLabel.textColor = [PUUtil getColorByHexadecimalColor:@"808080"];
+        _classifyLabel.textColor = kApp_Corlor_8;
         _classifyLabel.font = FONT_TITLE(kFont_Size_5);
         _classifyLabel.width = SCREEN_WIDTH-60-30-60;
         _classifyLabel.left = _articleImage.right+5;
@@ -317,7 +317,7 @@
     [aStr1 addAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                           FONT_TITLE(kFont_Size_5),
                           NSFontAttributeName,
-                          [PUUtil getColorByHexadecimalColor:@"808080"],
+                          kApp_Corlor_8,
                           NSForegroundColorAttributeName,nil]
                    range:range1];
     _priceAndNumLabel.attributedText = aStr1;
@@ -325,7 +325,7 @@
     [aStr1 addAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                           FONT_TITLE(kFont_Size_5),
                           NSFontAttributeName,
-                          [PUUtil getColorByHexadecimalColor:@"808080"],
+                          kApp_Corlor_8,
                           NSForegroundColorAttributeName,nil]
                    range:range2];
     _priceAndNumLabel.attributedText = aStr1;

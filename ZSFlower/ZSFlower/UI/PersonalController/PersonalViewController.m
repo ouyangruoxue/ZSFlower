@@ -17,6 +17,7 @@
 #import "FeedbackViewController.h"
 #import "BankCardViewController.h"
 #import "personalInfoViewController.h"
+#import "AddressViewController.h"
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *personalTable;
 @property (nonatomic,strong)UIButton *messageBtn;
@@ -308,7 +309,12 @@
         }
     }
     else{
-        if (indexPath.row == 1) {
+        
+        if (indexPath.row == 0) {
+            AddressViewController *addressmanager  = [[AddressViewController alloc] init];
+            [self.navigationController pushViewController:addressmanager animated:YES];
+        }
+        else if (indexPath.row == 1) {
             
             BankCardViewController *bankcardvc = [[BankCardViewController alloc] init];
             [self.navigationController pushViewController:bankcardvc animated:YES];
