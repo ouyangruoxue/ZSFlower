@@ -18,6 +18,8 @@
 #import "BankCardViewController.h"
 #import "personalInfoViewController.h"
 #import "AddressViewController.h"
+#import "MyCollectionViewController.h"
+#import "MessageCenterViewController.h"
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *personalTable;
 @property (nonatomic,strong)UIButton *messageBtn;
@@ -187,6 +189,8 @@
 
 -(void)messageAction{
     
+    MessageCenterViewController *message = [[MessageCenterViewController alloc] init];
+    [self.navigationController pushViewController:message animated:YES];
 }
 
 -(void)longinAction{
@@ -210,6 +214,8 @@
 
 -(void)myAttention{
     DLog(@"进入我的关注");
+    MyCollectionViewController *mycollection = [[MyCollectionViewController alloc] init];
+    [self.navigationController pushViewController:mycollection animated:YES];
 }
 
 -(void)myBrowseRecorders{

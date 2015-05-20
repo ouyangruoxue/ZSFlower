@@ -30,6 +30,7 @@
     self.titleText = @"地址管理";
     [self.containerView addSubview:self.addAddressBtn];
     [self.containerView addSubview:self.AddressManagerTable];
+    self.containerView.backgroundColor = K_BACKGROUND_COLOR;
 }
 
 

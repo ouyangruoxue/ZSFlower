@@ -30,6 +30,14 @@ typedef enum {
     kordercompleteAppraise//订单完成
 }orderType;
 
+typedef enum {
+    Kdefault = 0,//默认
+    kcutPrice,//降价优先
+    Kpromotion,//促销优先
+    Ksceening//筛选
+}myAttentionType;
+
+
 
 @interface PUUtil : NSObject
 

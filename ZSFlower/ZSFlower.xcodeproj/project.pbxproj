@@ -83,6 +83,12 @@
 		DA98BA6E1AFF04E0009FDECA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98BA6D1AFF04E0009FDECA /* HomeViewController.m */; };
 		DA98BA711AFF04F0009FDECA /* ShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98BA701AFF04F0009FDECA /* ShopCartViewController.m */; };
 		DA98BA751AFF060E009FDECA /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98BA741AFF060E009FDECA /* ClassifyViewController.m */; };
+		DAD1ED7A1B0ADEB700C21EF3 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */; };
+		DAD1ED7D1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED7C1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m */; };
+		DAD1ED801B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED7F1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m */; };
+		DAD1ED861B0B3EC300C21EF3 /* MessageCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED851B0B3EC300C21EF3 /* MessageCenterViewController.m */; };
+		DAD1ED891B0B3FDF00C21EF3 /* TQStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED881B0B3FDF00C21EF3 /* TQStarRatingView.m */; };
+		DAD1ED8C1B0B440C00C21EF3 /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED8B1B0B440C00C21EF3 /* MessageTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -241,6 +247,18 @@
 		DA98BA701AFF04F0009FDECA /* ShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCartViewController.m; sourceTree = "<group>"; };
 		DA98BA731AFF060E009FDECA /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
 		DA98BA741AFF060E009FDECA /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		DAD1ED781B0ADEB700C21EF3 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewController.h; path = ZSFlower/UI/MyCollectionViewController.h; sourceTree = SOURCE_ROOT; };
+		DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewController.m; path = ZSFlower/UI/MyCollectionViewController.m; sourceTree = SOURCE_ROOT; };
+		DAD1ED7B1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCommodityTableViewCell.h; sourceTree = "<group>"; };
+		DAD1ED7C1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionCommodityTableViewCell.m; sourceTree = "<group>"; };
+		DAD1ED7E1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MycollectionShopTableViewCell.h; sourceTree = "<group>"; };
+		DAD1ED7F1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MycollectionShopTableViewCell.m; sourceTree = "<group>"; };
+		DAD1ED841B0B3EC300C21EF3 /* MessageCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCenterViewController.h; sourceTree = "<group>"; };
+		DAD1ED851B0B3EC300C21EF3 /* MessageCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCenterViewController.m; sourceTree = "<group>"; };
+		DAD1ED871B0B3FDF00C21EF3 /* TQStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQStarRatingView.h; sourceTree = "<group>"; };
+		DAD1ED881B0B3FDF00C21EF3 /* TQStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQStarRatingView.m; sourceTree = "<group>"; };
+		DAD1ED8A1B0B440C00C21EF3 /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		DAD1ED8B1B0B440C00C21EF3 /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,6 +519,8 @@
 		DA72E70F1B05EBF0000BF140 /* personal */ = {
 			isa = PBXGroup;
 			children = (
+				DAD1ED871B0B3FDF00C21EF3 /* TQStarRatingView.h */,
+				DAD1ED881B0B3FDF00C21EF3 /* TQStarRatingView.m */,
 				DA72E7101B05EC43000BF140 /* FeedBackSelectTypeView.h */,
 				DA72E7111B05EC43000BF140 /* FeedBackSelectTypeView.m */,
 			);
@@ -542,6 +562,10 @@
 				DA07C9921B0738F600DDF656 /* AddressViewController.m */,
 				DA07C9941B073BDD00DDF656 /* personalInfoViewController.h */,
 				DA07C9951B073BDD00DDF656 /* personalInfoViewController.m */,
+				DAD1ED781B0ADEB700C21EF3 /* MyCollectionViewController.h */,
+				DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */,
+				DAD1ED841B0B3EC300C21EF3 /* MessageCenterViewController.h */,
+				DAD1ED851B0B3EC300C21EF3 /* MessageCenterViewController.m */,
 			);
 			path = PersonalController;
 			sourceTree = "<group>";
@@ -597,6 +621,12 @@
 				DA07C98F1B072BCC00DDF656 /* BankCardManagerTableViewCell.m */,
 				DA8C9EA31B09D03F002BE5F4 /* AddressManagerTableViewCell.h */,
 				DA8C9EA41B09D03F002BE5F4 /* AddressManagerTableViewCell.m */,
+				DAD1ED7B1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.h */,
+				DAD1ED7C1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m */,
+				DAD1ED7E1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.h */,
+				DAD1ED7F1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m */,
+				DAD1ED8A1B0B440C00C21EF3 /* MessageTableViewCell.h */,
+				DAD1ED8B1B0B440C00C21EF3 /* MessageTableViewCell.m */,
 			);
 			path = personalTableCell;
 			sourceTree = "<group>";
@@ -749,6 +779,7 @@
 				DA5E70101AF899CA0060040C /* DLThreeDESCrypt.m in Sources */,
 				DA66C6C71AD8F4A100FBC19C /* CustomNavigationController.m in Sources */,
 				DA5E701E1AF89A6E0060040C /* NSArray+Comparisons.m in Sources */,
+				DAD1ED861B0B3EC300C21EF3 /* MessageCenterViewController.m in Sources */,
 				DA66C6CC1AD8F6B900FBC19C /* UIViewAdditions.m in Sources */,
 				DA8A65E91AEDE0A9002F70CB /* RegexKitLite.m in Sources */,
 				DA07C9901B072BCC00DDF656 /* BankCardManagerTableViewCell.m in Sources */,
@@ -764,21 +795,25 @@
 				DA72E70E1B05D1DF000BF140 /* FeedbackViewController.m in Sources */,
 				DA72E7081B059EBF000BF140 /* SettingTableViewCell.m in Sources */,
 				DA98BA651AFF034D009FDECA /* Utility.m in Sources */,
+				DAD1ED801B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m in Sources */,
 				DA5E70111AF899CA0060040C /* NSData+CommonCrypto.m in Sources */,
 				DA8691E51B0320E9005DB8F7 /* MyOrderViewController.m in Sources */,
 				DA8F897A1B04338D00BC1AD6 /* UIImage+GIF.m in Sources */,
 				DA8F89731B04338D00BC1AD6 /* SDWebImageCompat.m in Sources */,
 				DA5E70001AF86D050060040C /* PopupNotify.m in Sources */,
 				DA8E59E51AFCC4CD00852CAE /* CustomBadge.m in Sources */,
+				DAD1ED8C1B0B440C00C21EF3 /* MessageTableViewCell.m in Sources */,
 				DA66C6C61AD8F4A100FBC19C /* BaseViewController.m in Sources */,
 				DA98BA6E1AFF04E0009FDECA /* HomeViewController.m in Sources */,
 				DA8F897C1B04338D00BC1AD6 /* UIImageView+HighlightedWebCache.m in Sources */,
 				DA8F89761B04338D00BC1AD6 /* SDWebImageDownloaderOperation.m in Sources */,
 				DA98BA6B1AFF04D1009FDECA /* DiscoverViewController.m in Sources */,
+				DAD1ED891B0B3FDF00C21EF3 /* TQStarRatingView.m in Sources */,
 				DA5E70131AF899CA0060040C /* NSString+Base64.m in Sources */,
 				DA5E700F1AF899CA0060040C /* AESCrypt.m in Sources */,
 				DA8E59D51AFB00FC00852CAE /* CustomTabBarController.m in Sources */,
 				DA8C9EA51B09D03F002BE5F4 /* AddressManagerTableViewCell.m in Sources */,
+				DAD1ED7A1B0ADEB700C21EF3 /* MyCollectionViewController.m in Sources */,
 				DA8F897D1B04338D00BC1AD6 /* UIImageView+WebCache.m in Sources */,
 				DA98BA711AFF04F0009FDECA /* ShopCartViewController.m in Sources */,
 				DA8F897E1B04338D00BC1AD6 /* UIView+WebCacheOperation.m in Sources */,
@@ -786,6 +821,7 @@
 				DA66C6901AD8EBAD00FBC19C /* main.m in Sources */,
 				DA66C70B1AD9005D00FBC19C /* Addtions.m in Sources */,
 				DA0DB0231AF7264000806854 /* RegisterViewController.m in Sources */,
+				DAD1ED7D1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m in Sources */,
 				DA5E701F1AF89A6E0060040C /* NSData+Base64.m in Sources */,
 				DA07C98D1B0728BE00DDF656 /* BankCardViewController.m in Sources */,
 				DA8E59DF1AFCA17900852CAE /* PersonalTableViewCell.m in Sources */,

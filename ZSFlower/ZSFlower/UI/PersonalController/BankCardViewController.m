@@ -30,6 +30,7 @@
     self.titleText = @"银行卡管理";
     [self.topContainerView addSubview:self.backButton];
     [self.containerView addSubview:self.bankManagerTable];
+    self.containerView.backgroundColor = K_BACKGROUND_COLOR;
 }
 
 - (void)didReceiveMemoryWarning {

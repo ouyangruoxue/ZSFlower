@@ -51,7 +51,7 @@
     _isSelectSex = NO;
 }
 -(void)initUI{
-    
+    self.containerView.backgroundColor = K_BACKGROUND_COLOR;
     [self.topContainerView addSubview:self.backButton];
     self.titleText = @"我的账户";
     [self.containerView addSubview:self.personalTable];
@@ -174,7 +174,7 @@
                          } completion:^(BOOL finished) {
                              _isSelectBirthday = NO;
                              NSDateFormatter * timeFormatter = [[NSDateFormatter alloc] init];
-                             [timeFormatter setDateFormat:@"YY年MM月DD日"];
+                             [timeFormatter setDateFormat:@"yyyy年MM月dd日"];
                              _birthday = [timeFormatter stringFromDate:_datePick.date];
                              [_personalTable reloadData];
                          }];
