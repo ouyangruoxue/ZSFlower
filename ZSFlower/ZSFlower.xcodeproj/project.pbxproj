@@ -42,6 +42,10 @@
 		DA72E70B1B05A2C3000BF140 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E70A1B05A2C3000BF140 /* Global.m */; };
 		DA72E70E1B05D1DF000BF140 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E70D1B05D1DF000BF140 /* FeedbackViewController.m */; };
 		DA72E7121B05EC43000BF140 /* FeedBackSelectTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E7111B05EC43000BF140 /* FeedBackSelectTypeView.m */; };
+		DA77ECEC1B0EBB0F00F00718 /* AccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */; };
+		DA77ECEF1B0EFE2700F00718 /* ChangeBindMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */; };
+		DA8154591B0DB499001349BD /* ServiceAndRefundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */; };
+		DA81545C1B0DBC73001349BD /* ServiceAndRefundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81545B1B0DBC73001349BD /* ServiceAndRefundCell.m */; };
 		DA8691E51B0320E9005DB8F7 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8691E41B0320E9005DB8F7 /* MyOrderViewController.m */; };
 		DA8691E81B034A34005DB8F7 /* personalOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8691E71B034A34005DB8F7 /* personalOrderTableViewCell.m */; };
 		DA8A65E91AEDE0A9002F70CB /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8A65E81AEDE0A9002F70CB /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -173,6 +177,14 @@
 		DA72E70D1B05D1DF000BF140 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		DA72E7101B05EC43000BF140 /* FeedBackSelectTypeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBackSelectTypeView.h; sourceTree = "<group>"; };
 		DA72E7111B05EC43000BF140 /* FeedBackSelectTypeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBackSelectTypeView.m; sourceTree = "<group>"; };
+		DA77ECEA1B0EBB0F00F00718 /* AccountSafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSafeViewController.h; sourceTree = "<group>"; };
+		DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSafeViewController.m; sourceTree = "<group>"; };
+		DA77ECED1B0EFE2700F00718 /* ChangeBindMobileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeBindMobileViewController.h; sourceTree = "<group>"; };
+		DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeBindMobileViewController.m; sourceTree = "<group>"; };
+		DA8154571B0DB499001349BD /* ServiceAndRefundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAndRefundViewController.h; sourceTree = "<group>"; };
+		DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAndRefundViewController.m; sourceTree = "<group>"; };
+		DA81545A1B0DBC73001349BD /* ServiceAndRefundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAndRefundCell.h; sourceTree = "<group>"; };
+		DA81545B1B0DBC73001349BD /* ServiceAndRefundCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAndRefundCell.m; sourceTree = "<group>"; };
 		DA8691E31B0320E9005DB8F7 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
 		DA8691E41B0320E9005DB8F7 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
 		DA8691E61B034A34005DB8F7 /* personalOrderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = personalOrderTableViewCell.h; path = ../personalOrderTableViewCell.h; sourceTree = "<group>"; };
@@ -566,6 +578,12 @@
 				DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */,
 				DAD1ED841B0B3EC300C21EF3 /* MessageCenterViewController.h */,
 				DAD1ED851B0B3EC300C21EF3 /* MessageCenterViewController.m */,
+				DA8154571B0DB499001349BD /* ServiceAndRefundViewController.h */,
+				DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */,
+				DA77ECEA1B0EBB0F00F00718 /* AccountSafeViewController.h */,
+				DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */,
+				DA77ECED1B0EFE2700F00718 /* ChangeBindMobileViewController.h */,
+				DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */,
 			);
 			path = PersonalController;
 			sourceTree = "<group>";
@@ -627,6 +645,8 @@
 				DAD1ED7F1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m */,
 				DAD1ED8A1B0B440C00C21EF3 /* MessageTableViewCell.h */,
 				DAD1ED8B1B0B440C00C21EF3 /* MessageTableViewCell.m */,
+				DA81545A1B0DBC73001349BD /* ServiceAndRefundCell.h */,
+				DA81545B1B0DBC73001349BD /* ServiceAndRefundCell.m */,
 			);
 			path = personalTableCell;
 			sourceTree = "<group>";
@@ -776,6 +796,7 @@
 				DA72E7121B05EC43000BF140 /* FeedBackSelectTypeView.m in Sources */,
 				DA8F89891B04AD3E00BC1AD6 /* SettingViewController.m in Sources */,
 				DA66C6931AD8EBAD00FBC19C /* AppDelegate.m in Sources */,
+				DA77ECEC1B0EBB0F00F00718 /* AccountSafeViewController.m in Sources */,
 				DA5E70101AF899CA0060040C /* DLThreeDESCrypt.m in Sources */,
 				DA66C6C71AD8F4A100FBC19C /* CustomNavigationController.m in Sources */,
 				DA5E701E1AF89A6E0060040C /* NSArray+Comparisons.m in Sources */,
@@ -787,9 +808,11 @@
 				DA8E59D21AF9F14200852CAE /* PasswordGetbackDetailViewController.m in Sources */,
 				DA8F89721B04338D00BC1AD6 /* SDImageCache.m in Sources */,
 				DA07C9961B073BDD00DDF656 /* personalInfoViewController.m in Sources */,
+				DA77ECEF1B0EFE2700F00718 /* ChangeBindMobileViewController.m in Sources */,
 				DA8F89861B049A9800BC1AD6 /* BrowseHistoryTableViewCell.m in Sources */,
 				DA8E59DC1AFC8CD400852CAE /* PersonalViewController.m in Sources */,
 				DA98BA751AFF060E009FDECA /* ClassifyViewController.m in Sources */,
+				DA81545C1B0DBC73001349BD /* ServiceAndRefundCell.m in Sources */,
 				DA5E70221AF89A6E0060040C /* UIDevice+Extensions.m in Sources */,
 				DA8F897B1B04338D00BC1AD6 /* UIImage+MultiFormat.m in Sources */,
 				DA72E70E1B05D1DF000BF140 /* FeedbackViewController.m in Sources */,
@@ -823,6 +846,7 @@
 				DA0DB0231AF7264000806854 /* RegisterViewController.m in Sources */,
 				DAD1ED7D1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m in Sources */,
 				DA5E701F1AF89A6E0060040C /* NSData+Base64.m in Sources */,
+				DA8154591B0DB499001349BD /* ServiceAndRefundViewController.m in Sources */,
 				DA07C98D1B0728BE00DDF656 /* BankCardViewController.m in Sources */,
 				DA8E59DF1AFCA17900852CAE /* PersonalTableViewCell.m in Sources */,
 				DA8F89781B04338D00BC1AD6 /* SDWebImagePrefetcher.m in Sources */,

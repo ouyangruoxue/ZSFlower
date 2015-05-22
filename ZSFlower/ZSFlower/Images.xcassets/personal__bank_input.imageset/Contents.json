@@ -2,17 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "personal_set up_icon03@2x.png"
+      "filename" : "personal__bank_input@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "personal_set up_icon03@3x.png"
+      "filename" : "personal__bank_input@3x.png"
     }
   ],
   "info" : {

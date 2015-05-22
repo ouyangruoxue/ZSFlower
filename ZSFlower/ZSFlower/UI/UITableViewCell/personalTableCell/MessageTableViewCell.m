@@ -26,8 +26,8 @@
         
         //商品图片
         _messageIconImage = [[UIImageView alloc] initWithFrame:CGRectMake(15, 0, 44, 44)];
-        _messageIconImage.contentMode = UIViewContentModeCenter;
-        _messageIconImage.backgroundColor = [UIColor greenColor];
+        _messageIconImage.contentMode = UIViewContentModeScaleAspectFit;
+        _messageIconImage.backgroundColor = [UIColor clearColor];
         _messageIconImage.centerY = 34;
         _messageIconImage.layer.cornerRadius = 4;
         _messageIconImage.layer.masksToBounds = YES;

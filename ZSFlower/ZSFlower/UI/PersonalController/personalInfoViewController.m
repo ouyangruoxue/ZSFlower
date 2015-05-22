@@ -9,7 +9,7 @@
 #import "personalInfoViewController.h"
 #import "PersonalTableViewCell.h"
 #import <MobileCoreServices/MobileCoreServices.h>
-
+#import "AccountSafeViewController.h"
 @interface personalInfoViewController ()<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate,
                                             UINavigationControllerDelegate,UIImagePickerControllerDelegate,
                                             UIPickerViewDataSource,UIPickerViewDelegate>
@@ -288,7 +288,8 @@
         
     }
     else{
-        
+        AccountSafeViewController  *acoountsafe = [[AccountSafeViewController alloc] init];
+        [self.navigationController pushViewController:acoountsafe animated:YES];
     }
 }
 

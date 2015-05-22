@@ -20,6 +20,7 @@
 #import "AddressViewController.h"
 #import "MyCollectionViewController.h"
 #import "MessageCenterViewController.h"
+#import "ServiceAndRefundViewController.h"
 @interface PersonalViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong)UITableView *personalTable;
 @property (nonatomic,strong)UIButton *messageBtn;
@@ -117,7 +118,7 @@
     UILabel *attentionTitleLabel = [[UILabel alloc] init];
     attentionTitleLabel.font = FONT_TITLE(kFont_Size_4);
     attentionTitleLabel.textColor = kApp_Corlor_1;
-    attentionTitleLabel.text = @"我的关注";
+    attentionTitleLabel.text = @"我的收藏";
     attentionTitleLabel.backgroundColor = [UIColor clearColor];
     attentionTitleLabel.top = _attentionLabel.bottom;
     attentionTitleLabel.numberOfLines = 1;
@@ -252,6 +253,8 @@
 
 -(void)waitingForAftersale{
     DLog(@"售后");
+    ServiceAndRefundViewController *service = [[ServiceAndRefundViewController alloc] init];
+    [[AppDelegate appDelegate].rootNaviController pushViewController:service animated:YES];
 }
 
 

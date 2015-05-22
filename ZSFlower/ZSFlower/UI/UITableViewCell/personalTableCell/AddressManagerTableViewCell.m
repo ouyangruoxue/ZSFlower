@@ -35,14 +35,16 @@
         [bottomView addSubview:_nameLabel];
         
         
-        _moblieNumberLabel = [[UILabel alloc] initWithFrame:CGRectMake(_nameLabel.right+30, 10, 80, 20)];
+        _moblieNumberLabel = [[UILabel alloc] initWithFrame:CGRectMake(_nameLabel.right+30, 10, 100, 20)];
         _moblieNumberLabel.backgroundColor = [UIColor clearColor];
 
         _moblieNumberLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
         _moblieNumberLabel.textAlignment = NSTextAlignmentLeft;
         _moblieNumberLabel.textColor = kApp_Corlor_2;
         _moblieNumberLabel.font = FONT_TITLE(kFont_Size_2);
-        _moblieNumberLabel.text = @"18551718588";
+        NSRange range1 =  NSMakeRange(4, 4);
+        NSString *textS = [@"18551718588" stringByReplacingCharactersInRange:range1 withString:@"****"];
+        _moblieNumberLabel.text = textS;
         [bottomView addSubview:_moblieNumberLabel];
         
         

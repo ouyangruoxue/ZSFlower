@@ -37,6 +37,11 @@ typedef enum {
     Ksceening//筛选
 }myAttentionType;
 
+typedef enum {
+    serviceRebund = 0,//
+    serviceRebunding,//进行中
+    serviceRebundDisabled//售后结束
+}serviceRebundType;
 
 
 @interface PUUtil : NSObject

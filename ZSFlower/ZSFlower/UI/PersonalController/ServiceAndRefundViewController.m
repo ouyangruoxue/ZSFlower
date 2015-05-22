@@ -1,24 +1,23 @@
 //
-//  MessageCenterViewController.m
+//  ServiceAndRefundViewController.m
 //  ZSFlower
 //
-//  Created by zuo xiaolin on 15/5/19.
+//  Created by zuo xiaolin on 15/5/21.
 //  Copyright (c) 2015年 zuo xiaolin. All rights reserved.
 //
 
-#import "MessageCenterViewController.h"
-#import "MessageTableViewCell.h"
-@interface MessageCenterViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property(nonatomic,strong)UITableView *myMessageTable;
+#import "ServiceAndRefundViewController.h"
+#import "ServiceAndRefundCell.h"
+@interface ServiceAndRefundViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UIButton *backBtn;
-@property(nonatomic,strong)UIButton *rightBtn;
+@property(nonatomic,strong)UITableView *serviceTable;
 @end
 
-@implementation MessageCenterViewController
+@implementation ServiceAndRefundViewController
 
 -(void)dealloc{
     _backBtn = nil;
-    _myMessageTable = nil;
+    _serviceTable = nil;
 }
 
 - (void)viewDidLoad {
@@ -30,24 +29,14 @@
     
     self.containerView.backgroundColor = K_BACKGROUND_COLOR;
     self.topImageView.backgroundColor = K_BACKGROUND_COLOR;
-    self.titleText =@"消息中心";
-    self.titleLabel.textColor = kApp_Corlor_8;
+    self.titleText =@"售后/退款";
+    self.titleLabel.textColor = kApp_Corlor_2;
     self.backButton = self.backBtn;
     [self.topContainerView addSubview:self.backButton];
-    [self.containerView addSubview:self.myMessageTable];
-    [self.topContainerView addSubview:self.rightBtn];
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.topContainerView.height-1, SCREEN_WIDTH, 1)];
     lineView.backgroundColor = kApp_Corlor_8;
     [self.topContainerView addSubview:lineView];
-}
-
-#pragma  mark buttonaction
--(void)back{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
--(void)rightBarBtnClickAction{
-    
+    [self.containerView addSubview:self.serviceTable];
 }
 
 #pragma mark uitableViewDelegate
@@ -58,13 +47,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 5;
+    return 3;
     
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 68;
+    return 160;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -93,22 +82,21 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    static NSString *messageHistory = @"MessageTableViewCell";
-    MessageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:messageHistory];
+    static NSString *serviceHistory = @"ServiceAndRefundCell";
+    ServiceAndRefundCell *cell = [tableView dequeueReusableCellWithIdentifier:serviceHistory];
     if (cell == nil) {
-        cell = [[MessageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:messageHistory];
+        cell = [[ServiceAndRefundCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:serviceHistory];
         cell.accessoryType =  UITableViewCellAccessoryNone;
     }
     if (indexPath.row == 0) {
-        cell.messageIconImage.image = IMGNAMED(@"personal_set up_icon01");
+        [cell setObjectWithType:serviceRebund];
     }
     else if (indexPath.row == 1){
-        cell.messageIconImage.image = IMGNAMED(@"personal_set up_icon02");
+        [cell setObjectWithType:serviceRebunding];
     }
     else if (indexPath.row == 2){
-        cell.messageIconImage.image = IMGNAMED(@"personal_set up_icon03");
+        [cell setObjectWithType:serviceRebundDisabled];
     }
-    [cell setUnreadNumber:5];
     return cell;
     
 }
@@ -118,19 +106,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+#pragma mark Buttonaction
+-(void)back{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
-- (UITableView *)myMessageTable{
-    if (!_myMessageTable) {
-        _myMessageTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.containerView.width, self.containerView.height) style:UITableViewStylePlain];
-        _myMessageTable.delegate = self;
-        _myMessageTable.dataSource = self;
-        _myMessageTable.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-        _myMessageTable.backgroundColor = [UIColor clearColor];
-        _myMessageTable.showsVerticalScrollIndicator = YES;
-        _myMessageTable.showsHorizontalScrollIndicator = YES;
-        _myMessageTable.tableFooterView = [[UIView alloc] init];
+#pragma mark get
+
+- (UITableView *)serviceTable{
+    if (!_serviceTable) {
+        _serviceTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.containerView.width, self.containerView.height) style:UITableViewStylePlain];
+        _serviceTable.delegate = self;
+        _serviceTable.dataSource = self;
+        _serviceTable.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _serviceTable.backgroundColor = [UIColor clearColor];
+        _serviceTable.showsVerticalScrollIndicator = YES;
+        _serviceTable.showsHorizontalScrollIndicator = YES;
+        _serviceTable.tableFooterView = [[UIView alloc] init];
     }
-    return _myMessageTable;
+    return _serviceTable;
 }
 
 -(UIButton *)backBtn{
@@ -144,21 +139,6 @@
         [_backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     }
     return _backBtn;
-}
-
--(UIButton *)rightBtn{
-    
-    if (!_rightBtn) {
-        _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _rightBtn.exclusiveTouch = YES;
-        _rightBtn.backgroundColor = [UIColor clearColor];
-        _rightBtn.frame = CGRectMake(0, 0, 21, 21);
-        _rightBtn.right  = SCREEN_WIDTH - 15;
-        _rightBtn.centerY = self.topContainerView.height/2;
-        [_rightBtn setImage:IMGNAMED(@"personal_set_up") forState:UIControlStateNormal];
-        [_rightBtn addTarget:self action:@selector(rightBarBtnClickAction) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _rightBtn;
 }
 
 

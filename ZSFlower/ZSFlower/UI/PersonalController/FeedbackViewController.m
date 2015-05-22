@@ -33,17 +33,19 @@
     [self createUI];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    //[self createUI];
+}
+
 -(void)createUI{
-    
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 45)];
-    topView.backgroundColor = kApp_Corlor_1;
     UIView *topBottomlineView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, SCREEN_WIDTH, 1)];
      topBottomlineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-    [topView addSubview:topBottomlineView];
+    [self.containerView addSubview:topBottomlineView];
     
     UIView *toplineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 1)];
     toplineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-    [topView addSubview:toplineView];
+    [self.containerView addSubview:toplineView];
     
     
     UILabel *topTitle = [[UILabel alloc] init];
@@ -58,24 +60,20 @@
     topTitle.height  = 20;
     topTitle.text = @"反馈类型：";
     [topTitle sizeToFit];
-    topTitle.centerY = topView.height/2;
-    [topView addSubview:topTitle];
+    topTitle.centerY = 22.5;
+    [self.containerView addSubview:topTitle];
     
-    self.feedBackTypeBtn.centerY = topView.height/2;
+    self.feedBackTypeBtn.centerY = 22.5;
     self.feedBackTypeBtn.left = topTitle.right+20;
-    [topView addSubview:self.feedBackTypeBtn];
-
+    [self.containerView addSubview:self.feedBackTypeBtn];
     
-    UIView *centerView = [[UIView alloc] initWithFrame:CGRectMake(0, 55, SCREEN_WIDTH, 127)];
-    centerView.backgroundColor = kApp_Corlor_1;
-    
-    UIView *ceneterBottomlineView = [[UIView alloc] initWithFrame:CGRectMake(0, 126, SCREEN_WIDTH, 1)];
+    UIView *ceneterBottomlineView = [[UIView alloc] initWithFrame:CGRectMake(0, 181, SCREEN_WIDTH, 1)];
     ceneterBottomlineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-    [centerView addSubview:ceneterBottomlineView];
+    [self.containerView addSubview:ceneterBottomlineView];
     
-    UIView *centerToplineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 1)];
+    UIView *centerToplineView = [[UIView alloc] initWithFrame:CGRectMake(0, 55, SCREEN_WIDTH, 1)];
     centerToplineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-    [centerView addSubview:centerToplineView];
+    [self.containerView addSubview:centerToplineView];
 
     
     
@@ -92,29 +90,24 @@
     centerTitle.height  = 20;
     centerTitle.text = @"反馈内容：";
     [centerTitle sizeToFit];
-    centerTitle.centerY = topView.height/2;
-    [centerView addSubview:centerTitle];
+    centerTitle.top = 70;
+    [self.containerView addSubview:centerTitle];
 
     UIImageView *centerImage = [[UIImageView alloc] initWithImage: IMGNAMED(@"personal__Opinion_icon02")];
     centerImage.left = centerTitle.right+20;
     centerImage.top = centerTitle.top;
-    [centerView addSubview:centerImage];
+    [self.containerView addSubview:centerImage];
     self.feedContent.left = centerTitle.right+20;
     self.feedContent.top = centerTitle.top;
-    [centerView addSubview:self.feedContent];
+    [self.containerView addSubview:self.feedContent];
     
-    
-    
-    UIView *BottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 187, SCREEN_WIDTH, 45)];
-    BottomView.backgroundColor = kApp_Corlor_1;
-    
-    UIView *bottomBottomlineView = [[UIView alloc] initWithFrame:CGRectMake(0, 44, SCREEN_WIDTH, 1)];
+    UIView *bottomBottomlineView = [[UIView alloc] initWithFrame:CGRectMake(0, 231, SCREEN_WIDTH, 1)];
     bottomBottomlineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-    [BottomView addSubview:bottomBottomlineView];
+    [self.containerView addSubview:bottomBottomlineView];
     
-    UIView *bottomtoplineView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 1)];
+    UIView *bottomtoplineView = [[UIView alloc] initWithFrame:CGRectMake(0, 187, SCREEN_WIDTH, 1)];
     bottomtoplineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-    [BottomView addSubview:bottomtoplineView];
+    [self.containerView addSubview:bottomtoplineView];
 
     UILabel *bottomTitle = [[UILabel alloc] init];
     bottomTitle.backgroundColor = [UIColor clearColor];
@@ -128,23 +121,19 @@
     bottomTitle.height  = 20;
     bottomTitle.text = @"联系方式：";
     [bottomTitle sizeToFit];
-    bottomTitle.centerY = topView.height/2;
-    [BottomView addSubview:bottomTitle];
+    bottomTitle.centerY = 209.5;
+    [self.containerView addSubview:bottomTitle];
     
     UIImageView *bottomImage = [[UIImageView alloc] initWithImage: IMGNAMED(@"personal__Opinion_icon03")];
     bottomImage.left = centerTitle.right+20;
     bottomImage.top = centerTitle.top;
-    bottomImage.centerY = BottomView.height/2;
-    [BottomView addSubview:bottomImage];
+    bottomImage.centerY = 209.5;
+    [self.containerView addSubview:bottomImage];
     self.contactWay.left = centerTitle.right+22;
     self.contactWay.top = centerTitle.top;
-    self.contactWay.centerY = BottomView.height/2;
-    [BottomView addSubview:self.contactWay];
-
+    self.contactWay.centerY = 209.5;
+    [self.containerView addSubview:self.contactWay];
     
-    [self.containerView addSubview:topView];
-    [self.containerView addSubview:centerView];
-    [self.containerView addSubview:BottomView];
 }
 
 #pragma mark buttonAction
