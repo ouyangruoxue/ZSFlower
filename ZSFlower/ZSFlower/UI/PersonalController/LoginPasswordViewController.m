@@ -39,6 +39,8 @@
 @property(nonatomic,strong)UIView *pickHeaderView;
 @property(nonatomic,strong)NSArray *changePasswordTypeArr;
 @property(nonatomic,assign)BOOL ismobileType;
+
+@property(nonatomic,strong)UIView *pickbottomView;
 @end
 
 @implementation LoginPasswordViewController
@@ -64,6 +66,7 @@
     _verifyPasswordBottom = nil;
     _verifyPasswordField = nil;
     
+    _pickbottomView = nil;
     
     _nextStepBtn = nil;
     
@@ -76,7 +79,7 @@
     _typePickView = nil;
     _pickHeaderView = nil;
     _changePasswordTypeArr = nil;
-    
+    _pickbottomView = nil;
     
 }
 
@@ -139,9 +142,21 @@
     [self.containerView addSubview:_bottomView];
     [self.containerView addSubview:self.nextStepBtn];
     
+    _pickbottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, self.containerView.height)];
+    _pickbottomView.hidden = YES;
+    _pickbottomView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.4];
     
-    [self.containerView addSubview:self.pickHeaderView];
-    [self.containerView addSubview:self.typePickView];
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapCancel)];
+    tapGesture.numberOfTapsRequired = 1;
+    tapGesture.numberOfTouchesRequired = 1;
+    [_pickbottomView addGestureRecognizer:tapGesture];
+    
+    
+    [_pickbottomView addSubview:self.typePickView];
+    [_pickbottomView addSubview:self.pickHeaderView];
+    
+    
+    [self.containerView addSubview:_pickbottomView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -262,7 +277,7 @@
 }
 
 -(void)chooseChangePasswordType{
-    
+    _pickbottomView.hidden = NO;
     [UIView animateWithDuration:0.3
                      animations:^{
                          _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-216-self.topImageView.height, 0, 0);
@@ -275,7 +290,7 @@
 
 
 -(void)chooseTypeComplete{
-    
+    _pickbottomView.hidden = YES;
     if (_ismobileType) {
         
         _messageCodeBottom.hidden = NO;
@@ -304,7 +319,24 @@
                      }];
 }
 
+-(void)cancelChoosePickView{
+    
+    _pickbottomView.hidden = YES;
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-self.topImageView.height, 0, 0);
+                         _pickHeaderView.top = _typePickView.top;
+                     } completion:^(BOOL finished) {
+                         
+                     }];
+    
+    
+}
 
+-(void)tapCancel{
+    
+    [self cancelChoosePickView];
+}
 
 -(void)getVerificode{
    
@@ -626,6 +658,17 @@
         [completeBtn setTitle:@"完成" forState:UIControlStateNormal];
         completeBtn.titleLabel.font = FONT_TITLE(kFont_Size_3);
         [completeBtn addTarget:self action:@selector(chooseTypeComplete) forControlEvents:UIControlEventAllEvents];
+        
+        UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 40)];
+        cancelBtn.backgroundColor = [UIColor clearColor];
+        [cancelBtn setTitleColor:kApp_Corlor_5 forState:UIControlStateNormal];
+        [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        cancelBtn.titleLabel.font = FONT_TITLE(kFont_Size_3);
+        [cancelBtn addTarget:self action:@selector(cancelChoosePickView) forControlEvents:UIControlEventAllEvents];
+        
+        [_pickHeaderView addSubview:cancelBtn];
+
+        
         
         [_pickHeaderView addSubview:completeBtn];
     }

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
-@interface CreateNewAddressViewController : UIViewController
+@interface CreateNewAddressViewController : BaseViewController
 
 @end

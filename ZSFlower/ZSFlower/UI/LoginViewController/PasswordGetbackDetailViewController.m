@@ -18,9 +18,25 @@
 @property(nonatomic,strong)UILabel *accountLabel;
 @property(nonatomic,strong)UIPickerView *typePickView;
 @property(nonatomic,strong)UIView *pickHeaderView;
+@property(nonatomic,strong)UIView *pickbottomView;
 @end
 
 @implementation PasswordGetbackDetailViewController
+
+-(void)dealloc{
+    
+    _validateBackground = nil;
+    _validateCodeField = nil;
+    _nextStepBtn = nil;
+    _getValidateBtn = nil;
+    _chooseTypeBtn = nil;
+    _nickNameLabel = nil;
+    _accountLabel = nil;
+    _typePickView = nil;
+    _pickHeaderView = nil;
+    _pickbottomView = nil;
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,8 +54,6 @@
     [self.containerView addSubview:self.validateCodeField];
     [self.containerView addSubview:self.getValidateBtn];
     [self.containerView addSubview:self.nextStepBtn];
-    [self.containerView addSubview:self.typePickView];
-    [self.containerView addSubview:self.pickHeaderView];
     
     UILabel *chooseTypealert = [[UILabel alloc] init];
     chooseTypealert.font = FONT_TITLE(kFont_Size_3);
@@ -52,7 +66,23 @@
     chooseTypealert.height = 20;
     chooseTypealert.bottom = self.chooseTypeBtn.top - 12;
     [self.containerView addSubview:chooseTypealert];
-
+    
+    _pickbottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, self.containerView.height)];
+    _pickbottomView.hidden = YES;
+    _pickbottomView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.4];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapCancel)];
+    tapGesture.numberOfTapsRequired = 1;
+    tapGesture.numberOfTouchesRequired = 1;
+    [_pickbottomView addGestureRecognizer:tapGesture];
+    
+    
+    [_pickbottomView addSubview:self.typePickView];
+    [_pickbottomView addSubview:self.pickHeaderView];
+    
+    
+    [self.containerView addSubview:_pickbottomView];
+    
 }
 
 
@@ -112,7 +142,7 @@
 #pragma mark btn action
 
 -(void)chooseGetBackType{
-    
+    _pickbottomView.hidden = NO;
     [UIView animateWithDuration:0.3
                      animations:^{
                          _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-216-self.topImageView.height, 0, 0);
@@ -132,7 +162,7 @@
 }
 
 -(void)chooseTypeComplete{
-    
+    _pickbottomView.hidden = YES;
     [UIView animateWithDuration:0.3
                      animations:^{
                          _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-self.topImageView.height, 0, 0);
@@ -140,6 +170,25 @@
                      } completion:^(BOOL finished) {
 
                      }];
+}
+
+-(void)cancelChoosePickView{
+    
+    _pickbottomView.hidden = YES;
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-self.topImageView.height, 0, 0);
+                         _pickHeaderView.top = _typePickView.top;
+                     } completion:^(BOOL finished) {
+                         
+                     }];
+    
+    
+}
+
+-(void)tapCancel{
+    
+    [self cancelChoosePickView];
 }
 
 #pragma mark get--
@@ -258,6 +307,16 @@
         [completeBtn setTitle:@"完成" forState:UIControlStateNormal];
         completeBtn.titleLabel.font = FONT_TITLE(kFont_Size_3);
         [completeBtn addTarget:self action:@selector(chooseTypeComplete) forControlEvents:UIControlEventAllEvents];
+        
+        UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 40)];
+        cancelBtn.backgroundColor = [UIColor clearColor];
+        [cancelBtn setTitleColor:kApp_Corlor_5 forState:UIControlStateNormal];
+        [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        cancelBtn.titleLabel.font = FONT_TITLE(kFont_Size_3);
+        [cancelBtn addTarget:self action:@selector(cancelChoosePickView) forControlEvents:UIControlEventAllEvents];
+        
+        [_pickHeaderView addSubview:cancelBtn];
+
         
         [_pickHeaderView addSubview:completeBtn];
     }

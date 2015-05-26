@@ -8,6 +8,7 @@
 
 #import "AddressViewController.h"
 #import "AddressManagerTableViewCell.h"
+#import "CreateNewAddressViewController.h"
 @interface AddressViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UIButton *addAddressBtn;
 @property(nonatomic,strong)UITableView *AddressManagerTable;
@@ -80,6 +81,9 @@
 
 #pragma mark BtnAction
 -(void)addAddressAction{
+    
+    CreateNewAddressViewController *newaddress = [[CreateNewAddressViewController alloc] init];
+    [self.navigationController pushViewController:newaddress animated:YES];
     
 }
 

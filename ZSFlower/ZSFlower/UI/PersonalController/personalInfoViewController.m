@@ -24,6 +24,7 @@
 @property(nonatomic,strong)UIDatePicker *datePick;
 @property(nonatomic,assign)BOOL isSelectSex;
 @property(nonatomic,assign)BOOL isSelectBirthday;
+@property(nonatomic,strong)UIView *pickbottomView;
 @end
 
 @implementation personalInfoViewController
@@ -55,9 +56,24 @@
     [self.topContainerView addSubview:self.backButton];
     self.titleText = @"我的账户";
     [self.containerView addSubview:self.personalTable];
-    [self.containerView addSubview:self.pickHeaderView];
-    [self.containerView addSubview:self.typePickView];
+
     [self.containerView addSubview:self.datePick];
+    
+    _pickbottomView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, self.containerView.height)];
+    _pickbottomView.hidden = YES;
+    _pickbottomView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.4];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapCancel)];
+    tapGesture.numberOfTapsRequired = 1;
+    tapGesture.numberOfTouchesRequired = 1;
+    [_pickbottomView addGestureRecognizer:tapGesture];
+    
+    
+    [_pickbottomView addSubview:self.typePickView];
+    [_pickbottomView addSubview:self.pickHeaderView];
+    
+    
+    [self.containerView addSubview:_pickbottomView];
 }
 
 -(void)back{
@@ -118,7 +134,7 @@
 #pragma mark btn action
 
 -(void)chooseSex{
-    
+    _pickbottomView.hidden = NO;
     if (_isSelectBirthday) {
         _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-self.topImageView.height, 0, 0);
          _pickHeaderView.top = SCREEN_HEIGHT-self.topImageView.height;
@@ -146,9 +162,29 @@
 }
 
 
+-(void)cancelChoosePickView{
+    
+    _pickbottomView.hidden = YES;
+    [UIView animateWithDuration:0.3
+                     animations:^{
+                         _typePickView.frame = CGRectMake(0,SCREEN_HEIGHT-self.topImageView.height, 0, 0);
+                         _pickHeaderView.top = _typePickView.top;
+                     } completion:^(BOOL finished) {
+                         
+                     }];
+    
+    
+}
+
+-(void)tapCancel{
+    
+    [self cancelChoosePickView];
+}
+
+
 -(void)chooseSexComplete{
     
-    
+    _pickbottomView.hidden = YES;
     if (_isSelectSex) {
         [UIView animateWithDuration:0.3
                          animations:^{
@@ -459,6 +495,17 @@
         [completeBtn setTitle:@"完成" forState:UIControlStateNormal];
         completeBtn.titleLabel.font = FONT_TITLE(kFont_Size_3);
         [completeBtn addTarget:self action:@selector(chooseSexComplete) forControlEvents:UIControlEventAllEvents];
+        
+        
+        UIButton *cancelBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 60, 40)];
+        cancelBtn.backgroundColor = [UIColor clearColor];
+        [cancelBtn setTitleColor:kApp_Corlor_5 forState:UIControlStateNormal];
+        [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        cancelBtn.titleLabel.font = FONT_TITLE(kFont_Size_3);
+        [cancelBtn addTarget:self action:@selector(cancelChoosePickView) forControlEvents:UIControlEventAllEvents];
+        
+        [_pickHeaderView addSubview:cancelBtn];
+
         
         [_pickHeaderView addSubview:completeBtn];
     }
