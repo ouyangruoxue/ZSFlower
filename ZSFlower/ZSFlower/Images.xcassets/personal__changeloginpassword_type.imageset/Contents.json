@@ -2,17 +2,13 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "personal__phoneVerification_complete@2x.png"
+      "filename" : "personal__changeloginpassword_type@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "personal__phoneVerification_complete@3x.png"
+      "filename" : "personal__changeloginpassword_type@3x.png"
     }
   ],
   "info" : {

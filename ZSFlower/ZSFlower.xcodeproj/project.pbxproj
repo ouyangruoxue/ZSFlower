@@ -87,6 +87,10 @@
 		DA98BA6E1AFF04E0009FDECA /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98BA6D1AFF04E0009FDECA /* HomeViewController.m */; };
 		DA98BA711AFF04F0009FDECA /* ShopCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98BA701AFF04F0009FDECA /* ShopCartViewController.m */; };
 		DA98BA751AFF060E009FDECA /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA98BA741AFF060E009FDECA /* ClassifyViewController.m */; };
+		DA9B83261B12B7E600A3A227 /* LoginPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9B83251B12B7E600A3A227 /* LoginPasswordViewController.m */; };
+		DA9B83E51B12C3B800A3A227 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9B83271B12C3B800A3A227 /* area.plist */; };
+		DA9B83E61B12C3B800A3A227 /* city.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA9B83281B12C3B800A3A227 /* city.plist */; };
+		DA9B843A1B13117500A3A227 /* CreateNewAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9B84391B13117500A3A227 /* CreateNewAddressViewController.m */; };
 		DAD1ED7A1B0ADEB700C21EF3 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */; };
 		DAD1ED7D1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED7C1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m */; };
 		DAD1ED801B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED7F1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m */; };
@@ -259,6 +263,12 @@
 		DA98BA701AFF04F0009FDECA /* ShopCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCartViewController.m; sourceTree = "<group>"; };
 		DA98BA731AFF060E009FDECA /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
 		DA98BA741AFF060E009FDECA /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		DA9B83241B12B7E600A3A227 /* LoginPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPasswordViewController.h; sourceTree = "<group>"; };
+		DA9B83251B12B7E600A3A227 /* LoginPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPasswordViewController.m; sourceTree = "<group>"; };
+		DA9B83271B12C3B800A3A227 /* area.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = area.plist; path = ../../../area.plist; sourceTree = "<group>"; };
+		DA9B83281B12C3B800A3A227 /* city.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = city.plist; path = ../../../city.plist; sourceTree = "<group>"; };
+		DA9B84381B13117500A3A227 /* CreateNewAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateNewAddressViewController.h; sourceTree = "<group>"; };
+		DA9B84391B13117500A3A227 /* CreateNewAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNewAddressViewController.m; sourceTree = "<group>"; };
 		DAD1ED781B0ADEB700C21EF3 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewController.h; path = ZSFlower/UI/MyCollectionViewController.h; sourceTree = SOURCE_ROOT; };
 		DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewController.m; path = ZSFlower/UI/MyCollectionViewController.m; sourceTree = SOURCE_ROOT; };
 		DAD1ED7B1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCommodityTableViewCell.h; sourceTree = "<group>"; };
@@ -405,6 +415,8 @@
 		DA66C68D1AD8EBAD00FBC19C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA9B83271B12C3B800A3A227 /* area.plist */,
+				DA9B83281B12C3B800A3A227 /* city.plist */,
 				DA8A65EA1AEDE1EF002F70CB /* framework */,
 				DA66C68E1AD8EBAD00FBC19C /* Info.plist */,
 				DA66C68F1AD8EBAD00FBC19C /* main.m */,
@@ -584,6 +596,10 @@
 				DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */,
 				DA77ECED1B0EFE2700F00718 /* ChangeBindMobileViewController.h */,
 				DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */,
+				DA9B83241B12B7E600A3A227 /* LoginPasswordViewController.h */,
+				DA9B83251B12B7E600A3A227 /* LoginPasswordViewController.m */,
+				DA9B84381B13117500A3A227 /* CreateNewAddressViewController.h */,
+				DA9B84391B13117500A3A227 /* CreateNewAddressViewController.m */,
 			);
 			path = PersonalController;
 			sourceTree = "<group>";
@@ -768,6 +784,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA66C6BC1AD8F13C00FBC19C /* Images.xcassets in Resources */,
+				DA9B83E51B12C3B800A3A227 /* area.plist in Resources */,
+				DA9B83E61B12C3B800A3A227 /* city.plist in Resources */,
 				DA66C6991AD8EBAD00FBC19C /* Main.storyboard in Resources */,
 				DA66C69E1AD8EBAD00FBC19C /* LaunchScreen.xib in Resources */,
 			);
@@ -812,6 +830,7 @@
 				DA8F89861B049A9800BC1AD6 /* BrowseHistoryTableViewCell.m in Sources */,
 				DA8E59DC1AFC8CD400852CAE /* PersonalViewController.m in Sources */,
 				DA98BA751AFF060E009FDECA /* ClassifyViewController.m in Sources */,
+				DA9B843A1B13117500A3A227 /* CreateNewAddressViewController.m in Sources */,
 				DA81545C1B0DBC73001349BD /* ServiceAndRefundCell.m in Sources */,
 				DA5E70221AF89A6E0060040C /* UIDevice+Extensions.m in Sources */,
 				DA8F897B1B04338D00BC1AD6 /* UIImage+MultiFormat.m in Sources */,
@@ -832,6 +851,7 @@
 				DA8F89761B04338D00BC1AD6 /* SDWebImageDownloaderOperation.m in Sources */,
 				DA98BA6B1AFF04D1009FDECA /* DiscoverViewController.m in Sources */,
 				DAD1ED891B0B3FDF00C21EF3 /* TQStarRatingView.m in Sources */,
+				DA9B83261B12B7E600A3A227 /* LoginPasswordViewController.m in Sources */,
 				DA5E70131AF899CA0060040C /* NSString+Base64.m in Sources */,
 				DA5E700F1AF899CA0060040C /* AESCrypt.m in Sources */,
 				DA8E59D51AFB00FC00852CAE /* CustomTabBarController.m in Sources */,

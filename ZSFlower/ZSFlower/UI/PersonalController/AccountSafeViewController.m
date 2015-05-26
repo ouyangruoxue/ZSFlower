@@ -8,7 +8,7 @@
 
 #import "AccountSafeViewController.h"
 #import "ChangeBindMobileViewController.h"
-
+#import "LoginPasswordViewController.h"
 @interface AccountSafeViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *accountTable;
 @end
@@ -86,7 +86,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if (indexPath.row == 1) {
+    if (indexPath.row == 0) {
+        LoginPasswordViewController *loginpassword = [[LoginPasswordViewController alloc] init];
+        [self.navigationController pushViewController:loginpassword animated:YES];
+    }
+    else if (indexPath.row == 1) {
         ChangeBindMobileViewController *changemobile = [[ChangeBindMobileViewController alloc] init];
         [self.navigationController pushViewController:changemobile animated:YES];
     }
