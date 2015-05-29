@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 #define kColorForTitleLabel     [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0]
-#define kSizeFontForTitleLabel  [UIFont boldSystemFontOfSize:20]
+#define kSizeFontForTitleLabel  [UIFont systemFontOfSize:20]
 
 @interface BaseViewController : UIViewController
 

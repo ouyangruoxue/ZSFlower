@@ -107,5 +107,11 @@
     return btn;
 }
 
++ (BOOL)point:(CGPoint)pt inRect:(CGRect)rect {
+    return (pt.x >= rect.origin.x
+            && pt.x <= rect.origin.x + rect.size.width
+            && pt.y >= rect.origin.y
+            && pt.y <= rect.origin.y + rect.size.height);
+}
 
 @end

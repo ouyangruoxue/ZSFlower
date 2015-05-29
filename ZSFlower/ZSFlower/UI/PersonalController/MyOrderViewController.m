@@ -8,7 +8,8 @@
 
 #import "MyOrderViewController.h"
 #import "personalOrderTableViewCell.h"
-@interface MyOrderViewController ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource>
+#import "AppraiseViewController.h"
+@interface MyOrderViewController ()<UIScrollViewDelegate,UITableViewDelegate,UITableViewDataSource,personalOrderCellDelegate>
 @property(nonatomic,strong)UIButton *allOrderBtn;
 @property(nonatomic,strong)UIButton *waitingForPayBtn;
 @property(nonatomic,strong)UIButton *waitingForSendBtn;
@@ -135,6 +136,13 @@
     }
 }
 
+#pragma mark personalCelldelegate
+-(void)firstAppraiseByself:(id)sender withType:(orderType)type{
+    
+    AppraiseViewController *appraise = [[AppraiseViewController alloc] init];
+    [self.navigationController pushViewController:appraise animated:YES];
+}
+
 #pragma mark uitableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
@@ -165,6 +173,7 @@
     personalOrderTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:personalCell];
     if (cell == nil) {
         cell = [[personalOrderTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:personalCell];
+        cell.personalOrderDelegate =self;
         cell.accessoryType =  UITableViewCellAccessoryNone;
     }
     if (tableView == _waitingForAppraiseTable) {

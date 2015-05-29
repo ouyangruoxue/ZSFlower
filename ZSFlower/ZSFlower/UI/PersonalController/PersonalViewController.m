@@ -203,14 +203,14 @@
         
     }];
 
-    /*
-    LoginViewController *login = [[LoginViewController alloc] init];
     
-    CustomNavigationController *nav = [[CustomNavigationController alloc] initWithRootViewController:login];
-    
-    [self.navigationController presentViewController:nav animated:YES completion:^{
-        
-    }];*/
+//    LoginViewController *login = [[LoginViewController alloc] init];
+//    
+//    CustomNavigationController *nav = [[CustomNavigationController alloc] initWithRootViewController:login];
+//    
+//    [self.navigationController presentViewController:nav animated:YES completion:^{
+//        
+//    }];
 }
 
 -(void)myAttention{

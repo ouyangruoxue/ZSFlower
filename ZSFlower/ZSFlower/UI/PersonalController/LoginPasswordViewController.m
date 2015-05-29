@@ -297,6 +297,7 @@
         _messageCodeField.hidden = NO;
         _getVerificodeBtn.hidden = NO;
         _alreadyVerifyMobileNum.text = @"已验证手机号：188****8132";
+        [_chooseVerifyTypeBtn setTitle:@"已验证手机" forState:UIControlStateNormal];
         [_alreadyVerifyMobileNum sizeToFit];
         [_nextStepBtn setTitle:@"下一步" forState:UIControlStateNormal];
 
@@ -305,6 +306,7 @@
         _messageCodeField.hidden = YES;
         _messageCodeBottom.hidden = YES;
         _getVerificodeBtn.hidden = YES;
+        [_chooseVerifyTypeBtn setTitle:@"已验证邮箱" forState:UIControlStateNormal];
         _alreadyVerifyMobileNum.text = @"邮箱地址：188****8132@qq.com";
         [_alreadyVerifyMobileNum sizeToFit];
         [_nextStepBtn setTitle:@"发送验证邮件" forState:UIControlStateNormal];

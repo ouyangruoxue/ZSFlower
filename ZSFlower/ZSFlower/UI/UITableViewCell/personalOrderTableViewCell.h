@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol personalOrderCellDelegate <NSObject>
+- (void) firstAppraiseByself:(id)sender withType:(orderType )type;
+@end
+
 @interface personalOrderTableViewCell : UITableViewCell
 @property(nonatomic,strong)UIImageView *shopImage;//店铺log
 @property(nonatomic,strong)UILabel     *shopTitleLabel;//店铺名
@@ -30,5 +34,6 @@
 @property(nonatomic,strong)UIButton *confirmReceiptBtn;//确认收货
 @property(nonatomic,strong)UIButton *deleteOrderBtn;
 @property(nonatomic,assign)orderType currentOrderType;
+@property(nonatomic,assign)id<personalOrderCellDelegate> personalOrderDelegate;
 -(void)setOrderViewForOrderType:(orderType)type;
 @end

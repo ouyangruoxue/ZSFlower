@@ -44,6 +44,15 @@ typedef enum {
 }serviceRebundType;
 
 
+typedef enum {
+    articleMatching = 0,//商品描述相符
+    sellersAttitude,//卖家服务态度
+    logisticSpeed,//物流速度
+    courierAttitude,//配送人员态度
+    articleAppraise //商品评价
+}markingType;
+
+
 @interface PUUtil : NSObject
 
 #pragma mark - 文本对齐方式

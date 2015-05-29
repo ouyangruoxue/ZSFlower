@@ -38,12 +38,28 @@
 		DA66C7081AD8FC7600FBC19C /* PUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C7071AD8FC7600FBC19C /* PUUtil.m */; };
 		DA66C70B1AD9005D00FBC19C /* Addtions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C70A1AD9005D00FBC19C /* Addtions.m */; };
 		DA66C71C1AD9240B00FBC19C /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA66C71B1AD9240B00FBC19C /* LoginManager.m */; };
+		DA7187411B1574F6002D531D /* AppraiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187401B1574F6002D531D /* AppraiseViewController.m */; };
+		DA7187441B159592002D531D /* MarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187431B159592002D531D /* MarkerView.m */; };
+		DA71875D1B15C86B002D531D /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187471B15C86B002D531D /* ELCAlbumPickerController.m */; };
+		DA71875E1B15C86B002D531D /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187491B15C86B002D531D /* ELCAsset.m */; };
+		DA71875F1B15C86B002D531D /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71874B1B15C86B002D531D /* ELCAssetCell.m */; };
+		DA7187601B15C86B002D531D /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71874F1B15C86B002D531D /* ELCAssetTablePicker.m */; };
+		DA7187611B15C86B002D531D /* ELCConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187511B15C86B002D531D /* ELCConsole.m */; };
+		DA7187621B15C86B002D531D /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187531B15C86B002D531D /* ELCImagePickerController.m */; };
+		DA7187631B15C86B002D531D /* ELCOverlayImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7187561B15C86B002D531D /* ELCOverlayImageView.m */; };
+		DA7187641B15C86B002D531D /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7187581B15C86B002D531D /* ELCAlbumPickerController.xib */; };
+		DA7187651B15C86B002D531D /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7187591B15C86B002D531D /* ELCAssetPicker.xib */; };
+		DA7187661B15C86B002D531D /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA71875A1B15C86B002D531D /* ELCAssetTablePicker.xib */; };
+		DA7187671B15C86B002D531D /* Overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = DA71875B1B15C86B002D531D /* Overlay.png */; };
+		DA7187681B15C86B002D531D /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA71875C1B15C86B002D531D /* Overlay@2x.png */; };
+		DA71876A1B15CCAE002D531D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7187691B15CCAE002D531D /* AssetsLibrary.framework */; };
 		DA72E7081B059EBF000BF140 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E7071B059EBF000BF140 /* SettingTableViewCell.m */; };
 		DA72E70B1B05A2C3000BF140 /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E70A1B05A2C3000BF140 /* Global.m */; };
 		DA72E70E1B05D1DF000BF140 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E70D1B05D1DF000BF140 /* FeedbackViewController.m */; };
 		DA72E7121B05EC43000BF140 /* FeedBackSelectTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E7111B05EC43000BF140 /* FeedBackSelectTypeView.m */; };
 		DA77ECEC1B0EBB0F00F00718 /* AccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */; };
 		DA77ECEF1B0EFE2700F00718 /* ChangeBindMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */; };
+		DA7ED7CE1B17060A005D7612 /* ShowScrollImgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7ED7CD1B17060A005D7612 /* ShowScrollImgeViewController.m */; };
 		DA8154591B0DB499001349BD /* ServiceAndRefundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */; };
 		DA81545C1B0DBC73001349BD /* ServiceAndRefundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81545B1B0DBC73001349BD /* ServiceAndRefundCell.m */; };
 		DA8691E51B0320E9005DB8F7 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8691E41B0320E9005DB8F7 /* MyOrderViewController.m */; };
@@ -102,6 +118,8 @@
 		DA9BD5391B141FF500A362BA /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9BD5301B141FF500A362BA /* AFURLSessionManager.m */; };
 		DA9BD53C1B14477A00A362BA /* CreateNewAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9BD53B1B14477A00A362BA /* CreateNewAddressCell.m */; };
 		DA9BD53F1B145E0200A362BA /* NewAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9BD53E1B145E0200A362BA /* NewAddressModel.m */; };
+		DA9BD5471B14839000A362BA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DA9BD5441B14839000A362BA /* SVProgressHUD.bundle */; };
+		DA9BD5481B14839000A362BA /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA9BD5461B14839000A362BA /* SVProgressHUD.m */; };
 		DAD1ED7A1B0ADEB700C21EF3 /* MyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */; };
 		DAD1ED7D1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED7C1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m */; };
 		DAD1ED801B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD1ED7F1B0B1C3300C21EF3 /* MycollectionShopTableViewCell.m */; };
@@ -184,6 +202,33 @@
 		DA66C70A1AD9005D00FBC19C /* Addtions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Addtions.m; sourceTree = "<group>"; };
 		DA66C71A1AD9240B00FBC19C /* LoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginManager.h; sourceTree = "<group>"; };
 		DA66C71B1AD9240B00FBC19C /* LoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
+		DA71873F1B1574F6002D531D /* AppraiseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppraiseViewController.h; sourceTree = "<group>"; };
+		DA7187401B1574F6002D531D /* AppraiseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppraiseViewController.m; sourceTree = "<group>"; };
+		DA7187421B159592002D531D /* MarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerView.h; sourceTree = "<group>"; };
+		DA7187431B159592002D531D /* MarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerView.m; sourceTree = "<group>"; };
+		DA7187461B15C86B002D531D /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAlbumPickerController.h; sourceTree = "<group>"; };
+		DA7187471B15C86B002D531D /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAlbumPickerController.m; sourceTree = "<group>"; };
+		DA7187481B15C86B002D531D /* ELCAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAsset.h; sourceTree = "<group>"; };
+		DA7187491B15C86B002D531D /* ELCAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAsset.m; sourceTree = "<group>"; };
+		DA71874A1B15C86B002D531D /* ELCAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetCell.h; sourceTree = "<group>"; };
+		DA71874B1B15C86B002D531D /* ELCAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetCell.m; sourceTree = "<group>"; };
+		DA71874C1B15C86B002D531D /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
+		DA71874D1B15C86B002D531D /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
+		DA71874E1B15C86B002D531D /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCAssetTablePicker.h; sourceTree = "<group>"; };
+		DA71874F1B15C86B002D531D /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCAssetTablePicker.m; sourceTree = "<group>"; };
+		DA7187501B15C86B002D531D /* ELCConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCConsole.h; sourceTree = "<group>"; };
+		DA7187511B15C86B002D531D /* ELCConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCConsole.m; sourceTree = "<group>"; };
+		DA7187521B15C86B002D531D /* ELCImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
+		DA7187531B15C86B002D531D /* ELCImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
+		DA7187541B15C86B002D531D /* ELCImagePickerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerHeader.h; sourceTree = "<group>"; };
+		DA7187551B15C86B002D531D /* ELCOverlayImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELCOverlayImageView.h; sourceTree = "<group>"; };
+		DA7187561B15C86B002D531D /* ELCOverlayImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELCOverlayImageView.m; sourceTree = "<group>"; };
+		DA7187581B15C86B002D531D /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAlbumPickerController.xib; sourceTree = "<group>"; };
+		DA7187591B15C86B002D531D /* ELCAssetPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetPicker.xib; sourceTree = "<group>"; };
+		DA71875A1B15C86B002D531D /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
+		DA71875B1B15C86B002D531D /* Overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Overlay.png; sourceTree = "<group>"; };
+		DA71875C1B15C86B002D531D /* Overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
+		DA7187691B15CCAE002D531D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		DA72E7061B059EBF000BF140 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
 		DA72E7071B059EBF000BF140 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
 		DA72E7091B05A2C3000BF140 /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
@@ -196,6 +241,8 @@
 		DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSafeViewController.m; sourceTree = "<group>"; };
 		DA77ECED1B0EFE2700F00718 /* ChangeBindMobileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeBindMobileViewController.h; sourceTree = "<group>"; };
 		DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeBindMobileViewController.m; sourceTree = "<group>"; };
+		DA7ED7CC1B17060A005D7612 /* ShowScrollImgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowScrollImgeViewController.h; sourceTree = "<group>"; };
+		DA7ED7CD1B17060A005D7612 /* ShowScrollImgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowScrollImgeViewController.m; sourceTree = "<group>"; };
 		DA8154571B0DB499001349BD /* ServiceAndRefundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAndRefundViewController.h; sourceTree = "<group>"; };
 		DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAndRefundViewController.m; sourceTree = "<group>"; };
 		DA81545A1B0DBC73001349BD /* ServiceAndRefundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAndRefundCell.h; sourceTree = "<group>"; };
@@ -303,6 +350,9 @@
 		DA9BD53B1B14477A00A362BA /* CreateNewAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNewAddressCell.m; sourceTree = "<group>"; };
 		DA9BD53D1B145E0200A362BA /* NewAddressModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewAddressModel.h; sourceTree = "<group>"; };
 		DA9BD53E1B145E0200A362BA /* NewAddressModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewAddressModel.m; sourceTree = "<group>"; };
+		DA9BD5441B14839000A362BA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		DA9BD5451B14839000A362BA /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		DA9BD5461B14839000A362BA /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		DAD1ED781B0ADEB700C21EF3 /* MyCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewController.h; path = ZSFlower/UI/MyCollectionViewController.h; sourceTree = SOURCE_ROOT; };
 		DAD1ED791B0ADEB700C21EF3 /* MyCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewController.m; path = ZSFlower/UI/MyCollectionViewController.m; sourceTree = SOURCE_ROOT; };
 		DAD1ED7B1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionCommodityTableViewCell.h; sourceTree = "<group>"; };
@@ -322,6 +372,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA71876A1B15CCAE002D531D /* AssetsLibrary.framework in Frameworks */,
 				DA8C9EA21B09899D002BE5F4 /* MobileCoreServices.framework in Frameworks */,
 				DA8A65FA1AEDE39A002F70CB /* libicucore.dylib in Frameworks */,
 				DA8A65F81AEDE291002F70CB /* AdSupport.framework in Frameworks */,
@@ -489,6 +540,8 @@
 		DA66C6B41AD8F03600FBC19C /* CommUI */ = {
 			isa = PBXGroup;
 			children = (
+				DA7187421B159592002D531D /* MarkerView.h */,
+				DA7187431B159592002D531D /* MarkerView.m */,
 				DA8E59E31AFCC4CD00852CAE /* CustomBadge.h */,
 				DA8E59E41AFCC4CD00852CAE /* CustomBadge.m */,
 				DA8E59D31AFB00FC00852CAE /* CustomTabBarController.h */,
@@ -513,6 +566,8 @@
 		DA66C6B71AD8F03600FBC19C /* thirdPartyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				DA7187451B15C86B002D531D /* ELCImagePicker */,
+				DA9BD5431B14839000A362BA /* SVProgressHUD */,
 				DA9BD4EF1B141A9F00A362BA /* AFNetworking */,
 				DA8F89531B04338D00BC1AD6 /* SDWebImage */,
 				DA5E70041AF899CA0060040C /* AES */,
@@ -577,6 +632,43 @@
 			path = LoginManager;
 			sourceTree = "<group>";
 		};
+		DA7187451B15C86B002D531D /* ELCImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DA7187461B15C86B002D531D /* ELCAlbumPickerController.h */,
+				DA7187471B15C86B002D531D /* ELCAlbumPickerController.m */,
+				DA7187481B15C86B002D531D /* ELCAsset.h */,
+				DA7187491B15C86B002D531D /* ELCAsset.m */,
+				DA71874A1B15C86B002D531D /* ELCAssetCell.h */,
+				DA71874B1B15C86B002D531D /* ELCAssetCell.m */,
+				DA71874C1B15C86B002D531D /* ELCAssetPickerFilterDelegate.h */,
+				DA71874D1B15C86B002D531D /* ELCAssetSelectionDelegate.h */,
+				DA71874E1B15C86B002D531D /* ELCAssetTablePicker.h */,
+				DA71874F1B15C86B002D531D /* ELCAssetTablePicker.m */,
+				DA7187501B15C86B002D531D /* ELCConsole.h */,
+				DA7187511B15C86B002D531D /* ELCConsole.m */,
+				DA7187521B15C86B002D531D /* ELCImagePickerController.h */,
+				DA7187531B15C86B002D531D /* ELCImagePickerController.m */,
+				DA7187541B15C86B002D531D /* ELCImagePickerHeader.h */,
+				DA7187551B15C86B002D531D /* ELCOverlayImageView.h */,
+				DA7187561B15C86B002D531D /* ELCOverlayImageView.m */,
+				DA7187571B15C86B002D531D /* Resources */,
+			);
+			path = ELCImagePicker;
+			sourceTree = "<group>";
+		};
+		DA7187571B15C86B002D531D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA7187581B15C86B002D531D /* ELCAlbumPickerController.xib */,
+				DA7187591B15C86B002D531D /* ELCAssetPicker.xib */,
+				DA71875A1B15C86B002D531D /* ELCAssetTablePicker.xib */,
+				DA71875B1B15C86B002D531D /* Overlay.png */,
+				DA71875C1B15C86B002D531D /* Overlay@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DA72E70F1B05EBF0000BF140 /* personal */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,6 +683,7 @@
 		DA8A65EA1AEDE1EF002F70CB /* framework */ = {
 			isa = PBXGroup;
 			children = (
+				DA7187691B15CCAE002D531D /* AssetsLibrary.framework */,
 				DA8C9EA11B09899D002BE5F4 /* MobileCoreServices.framework */,
 				DA8A65F91AEDE39A002F70CB /* libicucore.dylib */,
 				DA8A65F71AEDE291002F70CB /* AdSupport.framework */,
@@ -637,6 +730,10 @@
 				DA9B83251B12B7E600A3A227 /* LoginPasswordViewController.m */,
 				DA9B84381B13117500A3A227 /* CreateNewAddressViewController.h */,
 				DA9B84391B13117500A3A227 /* CreateNewAddressViewController.m */,
+				DA71873F1B1574F6002D531D /* AppraiseViewController.h */,
+				DA7187401B1574F6002D531D /* AppraiseViewController.m */,
+				DA7ED7CC1B17060A005D7612 /* ShowScrollImgeViewController.h */,
+				DA7ED7CD1B17060A005D7612 /* ShowScrollImgeViewController.m */,
 			);
 			path = PersonalController;
 			sourceTree = "<group>";
@@ -768,6 +865,16 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		DA9BD5431B14839000A362BA /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BD5441B14839000A362BA /* SVProgressHUD.bundle */,
+				DA9BD5451B14839000A362BA /* SVProgressHUD.h */,
+				DA9BD5461B14839000A362BA /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -849,8 +956,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA66C6BC1AD8F13C00FBC19C /* Images.xcassets in Resources */,
+				DA9BD5471B14839000A362BA /* SVProgressHUD.bundle in Resources */,
+				DA7187681B15C86B002D531D /* Overlay@2x.png in Resources */,
 				DA9B83E51B12C3B800A3A227 /* area.plist in Resources */,
 				DA9B83E61B12C3B800A3A227 /* city.plist in Resources */,
+				DA7187641B15C86B002D531D /* ELCAlbumPickerController.xib in Resources */,
+				DA7187651B15C86B002D531D /* ELCAssetPicker.xib in Resources */,
+				DA7187671B15C86B002D531D /* Overlay.png in Resources */,
+				DA7187661B15C86B002D531D /* ELCAssetTablePicker.xib in Resources */,
 				DA66C6991AD8EBAD00FBC19C /* Main.storyboard in Resources */,
 				DA66C69E1AD8EBAD00FBC19C /* LaunchScreen.xib in Resources */,
 			);
@@ -874,6 +987,7 @@
 				DA8F89771B04338D00BC1AD6 /* SDWebImageManager.m in Sources */,
 				DA5E70031AF8990E0060040C /* NSString+Utility.m in Sources */,
 				DA9BD5371B141FF500A362BA /* AFURLRequestSerialization.m in Sources */,
+				DA7187631B15C86B002D531D /* ELCOverlayImageView.m in Sources */,
 				DA8F89811B04904E00BC1AD6 /* BrowseHistoryViewController.m in Sources */,
 				DA5E70121AF899CA0060040C /* NSData+Encryption.m in Sources */,
 				DA07C9931B0738F600DDF656 /* AddressViewController.m in Sources */,
@@ -908,6 +1022,8 @@
 				DA5E70111AF899CA0060040C /* NSData+CommonCrypto.m in Sources */,
 				DA8691E51B0320E9005DB8F7 /* MyOrderViewController.m in Sources */,
 				DA8F897A1B04338D00BC1AD6 /* UIImage+GIF.m in Sources */,
+				DA7187611B15C86B002D531D /* ELCConsole.m in Sources */,
+				DA9BD5481B14839000A362BA /* SVProgressHUD.m in Sources */,
 				DA8F89731B04338D00BC1AD6 /* SDWebImageCompat.m in Sources */,
 				DA5E70001AF86D050060040C /* PopupNotify.m in Sources */,
 				DA8E59E51AFCC4CD00852CAE /* CustomBadge.m in Sources */,
@@ -934,20 +1050,28 @@
 				DA66C71C1AD9240B00FBC19C /* LoginManager.m in Sources */,
 				DA9BD53C1B14477A00A362BA /* CreateNewAddressCell.m in Sources */,
 				DA9BD5361B141FF500A362BA /* AFURLConnectionOperation.m in Sources */,
+				DA71875F1B15C86B002D531D /* ELCAssetCell.m in Sources */,
+				DA7ED7CE1B17060A005D7612 /* ShowScrollImgeViewController.m in Sources */,
 				DA66C6901AD8EBAD00FBC19C /* main.m in Sources */,
 				DA66C70B1AD9005D00FBC19C /* Addtions.m in Sources */,
 				DA0DB0231AF7264000806854 /* RegisterViewController.m in Sources */,
 				DA9BD5321B141FF500A362BA /* AFHTTPRequestOperationManager.m in Sources */,
 				DAD1ED7D1B0B1C1C00C21EF3 /* MyCollectionCommodityTableViewCell.m in Sources */,
+				DA7187621B15C86B002D531D /* ELCImagePickerController.m in Sources */,
 				DA5E701F1AF89A6E0060040C /* NSData+Base64.m in Sources */,
 				DA8154591B0DB499001349BD /* ServiceAndRefundViewController.m in Sources */,
 				DA07C98D1B0728BE00DDF656 /* BankCardViewController.m in Sources */,
 				DA8E59DF1AFCA17900852CAE /* PersonalTableViewCell.m in Sources */,
+				DA7187441B159592002D531D /* MarkerView.m in Sources */,
+				DA7187601B15C86B002D531D /* ELCAssetTablePicker.m in Sources */,
 				DA8F89781B04338D00BC1AD6 /* SDWebImagePrefetcher.m in Sources */,
 				DA0DB0271AF777D000806854 /* PassWordGetBackViewController.m in Sources */,
 				DA8F89711B04338D00BC1AD6 /* NSData+ImageContentType.m in Sources */,
+				DA71875E1B15C86B002D531D /* ELCAsset.m in Sources */,
 				DA8691E81B034A34005DB8F7 /* personalOrderTableViewCell.m in Sources */,
 				DA0DB0211AF7264000806854 /* LoginViewController.m in Sources */,
+				DA71875D1B15C86B002D531D /* ELCAlbumPickerController.m in Sources */,
+				DA7187411B1574F6002D531D /* AppraiseViewController.m in Sources */,
 				DA8E59D81AFB035100852CAE /* NSDictionary+Additions.m in Sources */,
 				DA66C7081AD8FC7600FBC19C /* PUUtil.m in Sources */,
 				DA72E70B1B05A2C3000BF140 /* Global.m in Sources */,
@@ -1031,7 +1155,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-licucore";
@@ -1068,7 +1192,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-licucore";
 				SDKROOT = iphoneos;

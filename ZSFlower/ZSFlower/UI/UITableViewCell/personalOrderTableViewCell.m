@@ -348,6 +348,10 @@
 //评价晒单
 -(void)firstAppraise{
     
+    if ([_personalOrderDelegate respondsToSelector:@selector(firstAppraiseByself:withType:)]) {
+        [_personalOrderDelegate firstAppraiseByself:self withType:_currentOrderType];
+    }
+    
 }
 //追加评论
 -(void)secondAppraise{

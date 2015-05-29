@@ -19,4 +19,6 @@
 + (UIView *)personalButtonImage:(NSString *)imageName buttonName:(NSString *)title target:(id)target action:(SEL)aSelector forControlEvents:(UIControlEvents)aControlEvents;
 //地址设置里面编辑删除按钮
 + (UIButton *)rightViewWithimage:(NSString *)imageName andTitle:(NSString *)title target:(id)target action:(SEL)aSelector forControlEvents:(UIControlEvents)aControlEvents;
+
++ (BOOL)point:(CGPoint)pt inRect:(CGRect)rect;
 @end

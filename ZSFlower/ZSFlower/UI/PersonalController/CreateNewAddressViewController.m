@@ -155,7 +155,8 @@
     if (((CreateNewAddressCell *)[_addressTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:3 inSection:0]]).contentField.text.length) {
         _addressModel.detailAddress = ((CreateNewAddressCell *)[_addressTable cellForRowAtIndexPath:[NSIndexPath indexPathForRow:3 inSection:0]]).contentField.text;
     }
-
+    
+    [_addressPickView becomeFirstResponder];
     
     _pickbottomView.hidden = NO;
     [UIView animateWithDuration:0.3
@@ -304,6 +305,38 @@
             break;
     }
 }
+
+//- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+//    
+//    UILabel * tempLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 0.0f, SCREEN_WIDTH/3, 30.0f)];
+//    
+//    [tempLabel setFont:[UIFont boldSystemFontOfSize:kFont_Size_1]];
+//    tempLabel.textAlignment = [PUUtil getTextAlign:TextAlignTypeCenter];
+//    tempLabel.backgroundColor = [UIColor clearColor];
+//    
+//    switch (component) {
+//        case 0:
+//                [tempLabel setFont:[UIFont boldSystemFontOfSize:kFont_Size_1]];
+//            tempLabel.text = [[_provincesArr objectAtIndex:row] objectForKey:@"state"];
+//            break;
+//        case 1:
+//                [tempLabel setFont:[UIFont boldSystemFontOfSize:kFont_Size_1]];
+//            tempLabel.text = [[_citiesArr objectAtIndex:row] objectForKey:@"city"];
+//            break;
+//        case 2:
+//            if ([_areasArr count] > 0) {
+//                    [tempLabel setFont:[UIFont boldSystemFontOfSize:kFont_Size_4]];
+//                tempLabel.text = [_areasArr objectAtIndex:row];
+//                break;
+//            }
+//        default:
+//            tempLabel.text =  @"";
+//            break;
+//    }
+//    
+//    return tempLabel;
+//    
+//}
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
