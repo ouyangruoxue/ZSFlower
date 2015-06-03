@@ -233,7 +233,7 @@
     self.confirmReceiptBtn.hidden = YES;
     switch (type) {
         case KwaitingForPay:
-        {   self.orderSelectBtn.hidden = NO;
+        {   _orderSelectBtn.hidden = NO;
             self.payBtn.hidden = NO;
             self.connectSellBtn.hidden = NO;
             self.cancelOrderBtn.hidden = NO;
@@ -340,6 +340,7 @@
 //订单选中
 -(void)orderSelect:(id)sender{
     
+        _orderSelectBtn.selected = !((UIButton *)sender).selected;
 }
 //联系卖家
 -(void)connectSeller{
@@ -408,9 +409,9 @@
         _orderSelectBtn.backgroundColor = [UIColor clearColor];
         [_orderSelectBtn setBackgroundImage:[UIImage imageNamed:@"personal__address_gray"] forState:UIControlStateNormal];
          [_orderSelectBtn setBackgroundImage:[UIImage imageNamed:@"personal__address_red"] forState:UIControlStateSelected];
-        [_connectSellBtn addTarget:self action:@selector(orderSelect:) forControlEvents:UIControlEventTouchUpInside];
+        [_orderSelectBtn addTarget:self action:@selector(orderSelect:) forControlEvents:UIControlEventTouchUpInside];
     }
-    return _connectSellBtn;
+    return _orderSelectBtn;
 }
 
 

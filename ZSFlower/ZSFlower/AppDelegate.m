@@ -33,7 +33,7 @@
     
     DiscoverViewController * discoerVc = [[DiscoverViewController alloc] init];
     
-    ShopCartViewController * shopCartVc = [[ShopCartViewController alloc] init];
+    ShopCartViewController * shopCartVc = [[ShopCartViewController alloc] initISFromTabbar:YES];
     
     PersonalViewController *personalVc = [[PersonalViewController alloc] init];
     

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ShopCartViewController : UIViewController
-
+#import "BaseViewController.h"
+@interface ShopCartViewController :BaseViewController
+-(id)initISFromTabbar:(BOOL)yesOrNo;
 @end
