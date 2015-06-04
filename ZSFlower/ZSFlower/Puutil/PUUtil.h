@@ -54,7 +54,12 @@ typedef enum {
 
 
 @interface PUUtil : NSObject
-
+//判断是否手机号
++(BOOL)isMoblieNum:(NSString *)mobileNum;
+//判断是否是邮箱账号
++(BOOL)isEmailFormat:(NSString *)emailStr;
+//判断是否包含非法字符
++(BOOL)hasCorrectAccountStr:(NSString *)account;
 #pragma mark - 文本对齐方式
 + (NSInteger)getTextAlign:(TextAlignTypeE)alignType;
 

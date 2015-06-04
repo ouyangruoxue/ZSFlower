@@ -68,7 +68,7 @@
     
     
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, 29, SCREEN_WIDTH, 1)];
-    lineView.backgroundColor = kApp_Corlor_8;
+    lineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"b2b2b2"];
     [headrView addSubview:lineView];
     
     self.myCollectionTable.tableHeaderView = headrView;

@@ -104,7 +104,7 @@
     _changePasswordTypeArr = @[@"已验证手机",@"已验证邮箱"];
     
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.topContainerView.height-1, SCREEN_WIDTH, 1)];
-    lineView.backgroundColor = kApp_Corlor_8;
+    lineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"b2b2b2"];
     [self.topContainerView addSubview:lineView];
     
     
@@ -625,7 +625,7 @@
     
     if (!_nextStepBtn) {
         _nextStepBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, _bottomView.bottom+15, SCREEN_WIDTH-30, 45)];
-        [_nextStepBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+        [_nextStepBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
         [_nextStepBtn setTitle:@"下一步" forState:UIControlStateNormal];
         _nextStepBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
         [_nextStepBtn addTarget:self action:@selector(nextStep) forControlEvents:UIControlEventTouchUpInside];

@@ -60,6 +60,10 @@
 		DA72E7121B05EC43000BF140 /* FeedBackSelectTypeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA72E7111B05EC43000BF140 /* FeedBackSelectTypeView.m */; };
 		DA77ECEC1B0EBB0F00F00718 /* AccountSafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */; };
 		DA77ECEF1B0EFE2700F00718 /* ChangeBindMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */; };
+		DA7BC2101B1FE16000093BA8 /* SetNickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7BC20F1B1FE16000093BA8 /* SetNickNameViewController.m */; };
+		DA7BC2131B1FFB7700093BA8 /* AddBankCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7BC2121B1FFB7700093BA8 /* AddBankCardViewController.m */; };
+		DA7BC2161B202AF500093BA8 /* AddBankCardMobileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7BC2151B202AF500093BA8 /* AddBankCardMobileViewController.m */; };
+		DA7BC2191B202B6500093BA8 /* AddBankCardCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7BC2181B202B6500093BA8 /* AddBankCardCodeViewController.m */; };
 		DA8154591B0DB499001349BD /* ServiceAndRefundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */; };
 		DA81545C1B0DBC73001349BD /* ServiceAndRefundCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81545B1B0DBC73001349BD /* ServiceAndRefundCell.m */; };
 		DA8691E51B0320E9005DB8F7 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8691E41B0320E9005DB8F7 /* MyOrderViewController.m */; };
@@ -247,6 +251,14 @@
 		DA77ECEB1B0EBB0F00F00718 /* AccountSafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSafeViewController.m; sourceTree = "<group>"; };
 		DA77ECED1B0EFE2700F00718 /* ChangeBindMobileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeBindMobileViewController.h; sourceTree = "<group>"; };
 		DA77ECEE1B0EFE2700F00718 /* ChangeBindMobileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeBindMobileViewController.m; sourceTree = "<group>"; };
+		DA7BC20E1B1FE16000093BA8 /* SetNickNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetNickNameViewController.h; sourceTree = "<group>"; };
+		DA7BC20F1B1FE16000093BA8 /* SetNickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetNickNameViewController.m; sourceTree = "<group>"; };
+		DA7BC2111B1FFB7700093BA8 /* AddBankCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBankCardViewController.h; sourceTree = "<group>"; };
+		DA7BC2121B1FFB7700093BA8 /* AddBankCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBankCardViewController.m; sourceTree = "<group>"; };
+		DA7BC2141B202AF500093BA8 /* AddBankCardMobileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBankCardMobileViewController.h; sourceTree = "<group>"; };
+		DA7BC2151B202AF500093BA8 /* AddBankCardMobileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBankCardMobileViewController.m; sourceTree = "<group>"; };
+		DA7BC2171B202B6500093BA8 /* AddBankCardCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBankCardCodeViewController.h; sourceTree = "<group>"; };
+		DA7BC2181B202B6500093BA8 /* AddBankCardCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBankCardCodeViewController.m; sourceTree = "<group>"; };
 		DA8154571B0DB499001349BD /* ServiceAndRefundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAndRefundViewController.h; sourceTree = "<group>"; };
 		DA8154581B0DB499001349BD /* ServiceAndRefundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceAndRefundViewController.m; sourceTree = "<group>"; };
 		DA81545A1B0DBC73001349BD /* ServiceAndRefundCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceAndRefundCell.h; sourceTree = "<group>"; };
@@ -758,6 +770,14 @@
 				DA9B84391B13117500A3A227 /* CreateNewAddressViewController.m */,
 				DA71873F1B1574F6002D531D /* AppraiseViewController.h */,
 				DA7187401B1574F6002D531D /* AppraiseViewController.m */,
+				DA7BC20E1B1FE16000093BA8 /* SetNickNameViewController.h */,
+				DA7BC20F1B1FE16000093BA8 /* SetNickNameViewController.m */,
+				DA7BC2111B1FFB7700093BA8 /* AddBankCardViewController.h */,
+				DA7BC2121B1FFB7700093BA8 /* AddBankCardViewController.m */,
+				DA7BC2141B202AF500093BA8 /* AddBankCardMobileViewController.h */,
+				DA7BC2151B202AF500093BA8 /* AddBankCardMobileViewController.m */,
+				DA7BC2171B202B6500093BA8 /* AddBankCardCodeViewController.h */,
+				DA7BC2181B202B6500093BA8 /* AddBankCardCodeViewController.m */,
 			);
 			path = PersonalController;
 			sourceTree = "<group>";
@@ -1057,6 +1077,8 @@
 				DA8E59E51AFCC4CD00852CAE /* CustomBadge.m in Sources */,
 				DAD1ED8C1B0B440C00C21EF3 /* MessageTableViewCell.m in Sources */,
 				DA9BD5311B141FF500A362BA /* AFHTTPRequestOperation.m in Sources */,
+				DA7BC2161B202AF500093BA8 /* AddBankCardMobileViewController.m in Sources */,
+				DA7BC2191B202B6500093BA8 /* AddBankCardCodeViewController.m in Sources */,
 				DA66C6C61AD8F4A100FBC19C /* BaseViewController.m in Sources */,
 				DA9CE40E1B1D7D7A00996297 /* ConfirmOrderViewController.m in Sources */,
 				DA98BA6E1AFF04E0009FDECA /* HomeViewController.m in Sources */,
@@ -1108,6 +1130,8 @@
 				DA9BD5341B141FF500A362BA /* AFNetworkReachabilityManager.m in Sources */,
 				DA8F89751B04338D00BC1AD6 /* SDWebImageDownloader.m in Sources */,
 				DA5E70211AF89A6E0060040C /* NSMutableArray+QueueAdditions.m in Sources */,
+				DA7BC2101B1FE16000093BA8 /* SetNickNameViewController.m in Sources */,
+				DA7BC2131B1FFB7700093BA8 /* AddBankCardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

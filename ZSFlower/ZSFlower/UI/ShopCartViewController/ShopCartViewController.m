@@ -61,8 +61,7 @@
       [self.topContainerView addSubview:self.backButton];
     }
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.topContainerView.height-1, SCREEN_WIDTH, 1)];
-    lineView.backgroundColor = kApp_Corlor_8;
-    lineView.alpha = 0.3;
+    lineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"b2b2b2"];
     [self.topContainerView addSubview:lineView];
     [self.containerView addSubview:self.shopCartTable];
     

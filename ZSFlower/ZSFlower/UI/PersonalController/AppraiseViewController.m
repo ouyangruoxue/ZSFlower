@@ -75,7 +75,7 @@
     [self.topContainerView addSubview:self.backButton];
     [self.containerView addSubview:self.appriaseScrollContainer];
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, self.topContainerView.height-1, SCREEN_WIDTH, 1)];
-    lineView.backgroundColor = kApp_Corlor_8;
+    lineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"b2b2b2"];
     [self.topContainerView addSubview:lineView];
     
      [self createHeaderView];

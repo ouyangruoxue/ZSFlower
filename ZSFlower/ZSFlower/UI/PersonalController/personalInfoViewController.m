@@ -10,6 +10,7 @@
 #import "PersonalTableViewCell.h"
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "AccountSafeViewController.h"
+#import "SetNickNameViewController.h"
 @interface personalInfoViewController ()<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate,
                                             UINavigationControllerDelegate,UIImagePickerControllerDelegate,
                                             UIPickerViewDataSource,UIPickerViewDelegate>
@@ -310,6 +311,10 @@
         if (indexPath.row == 0) {
             UIActionSheet * sheet= [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"我的相册", nil];
             [sheet showInView:self.containerView];
+        }
+        else if (indexPath.row ==1){
+            SetNickNameViewController *setNickname = [[SetNickNameViewController alloc] init];
+            [self.navigationController pushViewController:setNickname animated:YES];
         }
         else if (indexPath.row == 2){
             _isSelectSex = YES;

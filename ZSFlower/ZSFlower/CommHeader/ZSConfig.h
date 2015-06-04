@@ -100,10 +100,11 @@
 #define kFont_Size_4  13
 #define kFont_Size_5  12
 #define kFont_Size_6  11
+#define kFont_Size_8   9
+#define kFont_Size_9   8
 #define kFont_Size_7  10
 #define kFont_Size_14 14
 #define kFont_Size_21 21
-#define kFont_Size_8   9
 
 #define NOTIFICATION_DEFAULT     [NSNotificationCenter defaultCenter]
 

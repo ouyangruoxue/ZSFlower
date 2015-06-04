@@ -217,7 +217,7 @@
     [footerView setBackgroundColor:[UIColor clearColor]];
     
     UIButton * loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 20, SCREEN_WIDTH-30, 45)];
-    [loginBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+    [loginBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
     [loginBtn setTitle:@"登陆" forState:UIControlStateNormal];
     loginBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
     [loginBtn addTarget:self action:@selector(login) forControlEvents:UIControlEventTouchUpInside];

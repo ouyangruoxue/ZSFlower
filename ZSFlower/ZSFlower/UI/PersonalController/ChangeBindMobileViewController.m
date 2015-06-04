@@ -455,7 +455,7 @@
     
     if (!_nextStepBtn) {
         _nextStepBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 220, SCREEN_WIDTH-30, 45)];
-        [_nextStepBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+        [_nextStepBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
         [_nextStepBtn setTitle:@"下一步" forState:UIControlStateNormal];
         _nextStepBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
         [_nextStepBtn addTarget:self action:@selector(nextStep) forControlEvents:UIControlEventTouchUpInside];

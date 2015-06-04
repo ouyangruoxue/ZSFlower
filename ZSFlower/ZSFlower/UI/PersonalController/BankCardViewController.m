@@ -8,6 +8,7 @@
 
 #import "BankCardViewController.h"
 #import "BankCardManagerTableViewCell.h"
+#import "AddBankCardViewController.h"
 @interface BankCardViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *bankManagerTable;
 @end
@@ -43,6 +44,8 @@
 
 -(void)addBankCard{
     
+    AddBankCardViewController *addBankcard = [[AddBankCardViewController alloc] init];
+    [self.navigationController pushViewController:addBankcard animated:YES];
     
 }
 
@@ -78,7 +81,9 @@
         cell.accessoryType =  UITableViewCellAccessoryDisclosureIndicator;
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    
+    if (indexPath.row == 1) {
+        cell.lineView.hidden = YES;
+    }
     return cell;
     
 }
@@ -96,7 +101,7 @@
     
     
     UIButton * AddBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 20, SCREEN_WIDTH-30, 45)];
-    [AddBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+    [AddBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
     [AddBtn setTitle:@" ╋ 添加银行卡" forState:UIControlStateNormal];
     AddBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
     [AddBtn addTarget:self action:@selector(addBankCard) forControlEvents:UIControlEventTouchUpInside];

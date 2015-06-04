@@ -115,7 +115,7 @@
     if (!_addAddressBtn) {
         
         _addAddressBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, self.containerView.height-75, SCREEN_WIDTH-30, 45)];
-        [_addAddressBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+        [_addAddressBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
         [_addAddressBtn setTitle:@" ╋ 新增地址" forState:UIControlStateNormal];
         _addAddressBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
         [_addAddressBtn addTarget:self action:@selector(addAddressAction) forControlEvents:UIControlEventTouchUpInside];

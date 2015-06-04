@@ -73,13 +73,13 @@
         return;
     }
     
-    if ([[LoginManager shareInstance] isMoblieNum:_accountField.text]) {
+    if ([PUUtil isMoblieNum:_accountField.text]) {
         
     }
-    else if ([[LoginManager shareInstance] isEmailFormat:_accountField.text]){
+    else if ([PUUtil isEmailFormat:_accountField.text]){
         
     }
-    else if ([[LoginManager shareInstance] hasCorrectAccountStr:_accountField.text]){
+    else if ([PUUtil hasCorrectAccountStr:_accountField.text]){
         
     }
     else{
@@ -154,7 +154,7 @@
     if (!_nextStepBtn) {
         _nextStepBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.accountFieldBackground.left, self.validateBackground.bottom+20, SCREEN_WIDTH-30, 45)];
         _nextStepBtn.backgroundColor = [UIColor clearColor];
-        [_nextStepBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+        [_nextStepBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
         [_nextStepBtn setTitle:@"下一步" forState:UIControlStateNormal];
         _nextStepBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
         [_nextStepBtn addTarget:self action:@selector(nextStep) forControlEvents:UIControlEventTouchUpInside];

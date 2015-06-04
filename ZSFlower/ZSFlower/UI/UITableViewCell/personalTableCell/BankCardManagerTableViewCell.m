@@ -16,6 +16,7 @@
     _bankIcon = nil;
     _bankName = nil;
     _bankCardType = nil;
+    _lineView = nil;
 }
 
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
@@ -77,9 +78,9 @@
         [_bankCardType sizeToFit];
         [self.contentView addSubview:_bankCardType];
         
-        UIView  *lineView = [[UIView alloc] initWithFrame:CGRectMake(95, 64, SCREEN_WIDTH-95, 1)];
-        lineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
-        [self.contentView addSubview:lineView];
+        _lineView = [[UIView alloc] initWithFrame:CGRectMake(95, 64, SCREEN_WIDTH-95, 1)];
+        _lineView.backgroundColor = [PUUtil getColorByHexadecimalColor:@"e5e5e5"];
+        [self.contentView addSubview:_lineView];
     }
     return self;
 }- (void)setSelected:(BOOL)selected animated:(BOOL)animated {

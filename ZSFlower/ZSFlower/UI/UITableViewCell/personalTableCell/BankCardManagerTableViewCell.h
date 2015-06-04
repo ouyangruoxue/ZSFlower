@@ -13,5 +13,5 @@
 @property(nonatomic,strong)UILabel     *bankName;
 @property(nonatomic,strong)UILabel     *bankCardNumber;
 @property(nonatomic,strong)UILabel     *bankCardType;
--(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier;
+@property(nonatomic,strong)UIView      *lineView;
 @end

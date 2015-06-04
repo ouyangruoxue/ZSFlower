@@ -495,7 +495,7 @@
     
     if (!_saveBtn) {
         _saveBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, self.containerView.height-75, SCREEN_WIDTH-30, 45)];
-        [_saveBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+        [_saveBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
         [_saveBtn setTitle:@"保存" forState:UIControlStateNormal];
         _saveBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
         [_saveBtn addTarget:self action:@selector(saveAddress) forControlEvents:UIControlEventTouchUpInside];

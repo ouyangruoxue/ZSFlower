@@ -143,7 +143,7 @@
     [footerView addSubview:protocolLabel];
     
     UIButton * loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, 48, SCREEN_WIDTH-30, 45)];
-    [loginBtn setBackgroundImage:[UIImage imageNamed:@"loginBtn"] forState:UIControlStateNormal];
+    [loginBtn setBackgroundImage:[PUUtil stretchImage:IMGNAMED(@"loginBtn") capInsets:UIEdgeInsetsMake(5, 5, 5, 5) resizingMode:UIImageResizingModeStretch]  forState:UIControlStateNormal];
     [loginBtn setTitle:@"注册" forState:UIControlStateNormal];
     loginBtn.titleLabel.font = FONT_TITLE(kFont_Size_21);
     [loginBtn addTarget:self action:@selector(regiester) forControlEvents:UIControlEventTouchUpInside];
@@ -157,7 +157,7 @@
 
 -(void)regiester{
     
-    if ([[LoginManager shareInstance] isMoblieNum:_mobileTextfield.text]) {
+    if ([PUUtil isMoblieNum:_mobileTextfield.text]) {
         
         if (!_selectBtn.selected) {
             [PopupNotify showMessage:@"请同意爱森林注册协议"];
@@ -185,7 +185,7 @@
 
 -(void)getVerisonCode{
 
-    if ([[LoginManager shareInstance] isMoblieNum:_mobileTextfield.text]) {
+    if ([PUUtil isMoblieNum:_mobileTextfield.text]) {
         
 
     }
